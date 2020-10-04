@@ -5,4 +5,52 @@
   align-items: center;
   width: 100%;
   height: 100vh;
+  font-family: $font__secondary;
+  &__img {
+    width: 250px;
+  }
+  &__intro {
+    text-align: center;
+    width: 265px;
+    margin-top: 35.4px;
+    margin-bottom: 17.8px;
+    &__title {
+      font-family: $font__primary;
+      color: $colorPrimary;
+      font-size: 19.2px;
+    }
+    &__text {
+      color: $colorSecondaryDark;
+      font-size: 12.8px;
+    }
+  }
+  &__icons {
+    &__list {
+      height: 73.8px;
+      width: 268px;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: 1fr;
+      text-align: center;
+      .design {
+        grid-column: 1/2;
+      }
+      .fill {
+        grid-column: 2/3;
+      }
+      .share {
+        grid-column: 3/4;
+      }
+    }
+    &__item {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+    &__text {
+      color: $colorTertiaryDark;
+      font-size: 12.8px;
+    }
+  }
 }
