@@ -1,0 +1,10 @@
+.icon {
+  height: 26px;
+  width: auto;
+  color: $colorPrimary;
+  font-size: 22.4px;
+  @media (min-width: 768px) {
+    height: 29px;
+    font-size: 28px;
+  }
+}
