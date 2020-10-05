@@ -1,0 +1,101 @@
+.landing {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  font-family: $font__secondary;
+  background-color: $colorTertiaryLightMid;
+  &__img {
+    width: 250px;
+    @media (min-width: 768px) {
+      width: 419px;
+    }
+  }
+  &__intro {
+    text-align: center;
+    width: 265px;
+    margin-top: 35.4px;
+    margin-bottom: 17.8px;
+    @media (min-width: 768px) {
+      width: 331px;
+      margin-top: 31px;
+      margin-bottom: 27px;
+    }
+    &__title {
+      font-family: $font__primary;
+      color: $colorPrimary;
+      font-size: 19.2px;
+      @media (min-width: 768px) {
+        font-size: 24px;
+      }
+    }
+    &__text {
+      color: $colorSecondaryDark;
+      font-size: 12.8px;
+      @media (min-width: 768px) {
+        font-size: 16px;
+      }
+    }
+  }
+  &__icons {
+    border-radius: 4px;
+    border: solid 1.6px $colorPrimaryDull;
+    &__list {
+      height: 73.8px;
+      width: 268px;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: 1fr;
+      text-align: center;
+      @media (min-width: 768px) {
+        height: 86px;
+        width: 325px;
+      }
+      .design {
+        grid-column: 1/2;
+      }
+      .fill {
+        grid-column: 2/3;
+      }
+      .share {
+        grid-column: 3/4;
+      }
+    }
+    &__item {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+    &__text {
+      color: $colorTertiaryDark;
+      font-size: 12.8px;
+      @media (min-width: 768px) {
+        font-size: 16px;
+      }
+    }
+  }
+  &__button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 129px;
+    height: 42px;
+    border-radius: 21px;
+    background-color: $colorSecondaryMidtone;
+    margin-top: 38.6px;
+    @media (min-width: 768px) {
+      margin-top: 186px;
+      height: 42px;
+      width: 129px;
+    }
+    &__link {
+      color: $colorTertiaryLight;
+      text-transform: uppercase;
+      font-size: 16px;
+      font-weight: 500;
+    }
+  }
+}
