@@ -1,0 +1,26 @@
+.form__share {
+  text-align: center;
+  &--button {
+    width: 199px;
+    height: 50px;
+    background-color: $colorPrimary;
+    border-radius: 12px;
+    border: none;
+    box-shadow: 0 1px 6px 0 rgba(0, 0, 0, 0.32);
+    margin: 30px 61px;
+
+    &:active {
+      background-color: $colorTertiaryMidtoneLight;
+    }
+    & .fa-address-card {
+      margin-right: 9px;
+    }
+  }
+  &--message {
+    background-color: red;
+  }
+}
+
+.hidden {
+  display: none;
+}
