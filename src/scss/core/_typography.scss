@@ -6,3 +6,16 @@
   font-size: 14px;
   line-height: 20px;
 }
+.form__data__label {
+  color: $colorSecondaryDark;
+  font-size: 14px;
+  font-weight: 600;
+}
+.f-main {
+  font-family: $font__secondary;
+}
+[placeholder] {
+  padding: 3px 0px 7px 9px;
+  font-size: 14px;
+  font-family: $font__secondary;
+}
