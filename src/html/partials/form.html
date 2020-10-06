@@ -1,16 +1,16 @@
-<form action="/signup" method="post" class="form">
+<form action="/signup" method="post" class="form" role="form">
   <fieldset class="form__design column">
     <div class="form__box">
       <div class="form__box__item">
         <i class="far fa-object-ungroup icon" aria-hidden="true"></i>
-        <h2 class="form__box__title">Diseña</h2>
+        <h2 class="form__box__title" aria-label="Diseña">Diseña</h2>
       </div>
       <button class="form__box__button">
         <i class="fas fa-angle-down down"></i>
       </button>
     </div>
     <div class="form__color">
-      <label for="color1" class="form__label">Colores</label>
+      <label for="color1" class="form__label" >Colores</label>
       <div class="form__color__box">
         <input
           type="radio"
@@ -63,7 +63,7 @@
     <div class="form__box">
       <div class="form__box__item">
         <i class="far fa-keyboard icon" aria-hidden="true"></i>
-        <h2 class="form__box__title">Rellena</h2>
+        <h2 class="form__box__title" aria-label="Rellena">Rellena</h2>
       </div>
       <button class="form__box__button">
         <i class="fas fa-angle-down down"></i>
@@ -71,7 +71,7 @@
     </div>
 
     <div class="form__data">
-      <div class="form__data__name">
+      <div class="form__data__name" aria-label="Nombre completo">
         <label for="name">Nombre completo</label>
         <input
           class="form__data__input"
@@ -81,7 +81,7 @@
           placeholder="Ej: Sally Jill"
         />
       </div>
-      <div class="form__data__job">
+      <div class="form__data__job" aria-label="Puesto">
         <label class="form__data__label" for="job">Puesto</label>
         <input
           class="form__data__input"
@@ -92,7 +92,7 @@
         />
       </div>
 
-      <div class="form__data__image">
+      <div class="form__data__image" aria-label="Imagen de perfil">
         <label for="image">Imagen de perfil</label>
         <input
           class="form__data__image__input js__profile-upload-btn"
@@ -105,6 +105,7 @@
             <button
               type="button"
               class="form__data__image__btn js__profile-trigger"
+              aria-label="Añadir imagen"
             >
               Añadir imagen
             </button>
@@ -113,7 +114,7 @@
           <div class="form__data__image__preview js__profile-preview"></div>
         </div>
       </div>
-      <div class="form__data__contact">
+      <div class="form__data__contact" aria-label="Contacto">
         <label class="form__data__label" for="mail">Email</label>
         <input
           class="form__data__input"
@@ -155,7 +156,7 @@
     <div class="form__box">
       <div class="form__box__item">
         <i class="fas fa-share-alt icon" aria-hidden="true"></i>
-        <h2 class="form__box__title">Comparte</h2>
+        <h2 class="form__box__title" aria-label="Comparte">Comparte</h2>
       </div>
       <button class="form__box__button">
         <i class="fas fa-angle-down down"></i>
@@ -169,7 +170,7 @@
       <a class="card-link" href="#" title="Link a la nueva tarjeta"
         >Link a la nueva tarjeta</a
       >
-      <button class="share-twitter">
+      <button class="share-twitter" title="Compartir en twitter">
         <i class="fab fa-twitter"></i>Compartir en twitter
       </button>
     </div>
