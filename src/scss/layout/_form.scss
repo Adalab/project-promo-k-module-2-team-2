@@ -40,6 +40,10 @@
 
         &__buttonsbox {
             display: flex;
+
+            & .hiddenField {
+                display:none;
+            }
             
         }
 
