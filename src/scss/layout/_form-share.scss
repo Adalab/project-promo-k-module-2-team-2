@@ -16,13 +16,12 @@
     }
   }
   &--message {
-    width: 280px;
+    margin: 30px 20px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    border-top: $colorTertiaryDarkMidtone solid 1px;
-    border-bottom: $colorTertiaryDarkMidtone solid 1px;
-    margin: 0 auto 30px auto;
+    border-top: $colorTertiaryMidtone solid 1px;
+    margin: 0 auto;
 
     & .h3 {
       margin: 20px 0 10px 0;
