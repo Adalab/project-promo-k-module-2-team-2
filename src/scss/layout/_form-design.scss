@@ -1,0 +1,55 @@
+.form {
+  &__design {
+    width: 100%;
+    height: 224px;
+  }
+  &__label {
+    text-transform: uppercase;
+    margin-left: 39px;
+    font-family: $font__secondary;
+    font-size: 14px;
+    color: $colorTertiaryDark;
+  }
+  &__color {
+    display: flex;
+    justify-content: space-between;
+    &__box {
+      display: flex;
+    }
+    &__input {
+      margin-right: 10px;
+    }
+    &__option {
+      display: flex;
+      margin-right: 20px;
+      margin-bottom: 20px;
+    }
+    &__first {
+      background-color: $colorSecondaryDark;
+    }
+    &__second {
+      background-color: #438792;
+    }
+    &__third {
+      background-color: $colorSecondaryLight;
+    }
+    &__fourth {
+      background-color: $colorOptionSecondDark;
+    }
+    &__fifth {
+      background-color: $colorOptionSecondMidtone;
+    }
+    &__sixth {
+      background-color: $colorOptionSecondLight;
+    }
+    &__seventh {
+      background-color: $colorOptionThirdDark;
+    }
+    &__eighth {
+      background-color: $colorOptionThirdMidtone;
+    }
+    &__nineth {
+      background-color: $colorOptionThirdLight;
+    }
+  }
+}
