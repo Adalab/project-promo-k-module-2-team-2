@@ -7,6 +7,19 @@
   text-transform: uppercase;
 }
 
+.share-twitter {
+  font-family: $font__secondary;
+  color: $colorTertiaryLight;
+  font-size: 14px;
+}
+
+// links
+.card-link {
+  font-family: $font__secondary;
+  color: $colorPrimary;
+  font-size: 12px;
+}
+
 // footer
 
 .copy {
