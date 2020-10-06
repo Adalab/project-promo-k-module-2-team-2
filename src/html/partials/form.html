@@ -1,4 +1,4 @@
-<form class="form">
+<form action="/signup" method="post" class="form">
   <fieldset class="form__design">
     <div class="form__box">
       <div class="form__box__item">
@@ -7,34 +7,56 @@
     </div>
       <button class="form__box__button"><i class="fas fa-angle-down down"></i></button>
     </div>
-    <div class="form__color__box">
-      <label for="color1" class="form__label"></label>
-      <input type="radio" name="color" id="color1" />
-      <div class="form__color__option">
-        <div class="form__color__first color-box"></div>
-        <div class="form__color__second color-box"></div>
-        <div class="form__color__third color-box"></div>
+    <div class="form__color">
+      <label for="color1" class="form__label">Colores</label>
+      <div class="form__color__box">
+        <input
+          type="radio"
+          name="color"
+          id="color1"
+          class="form__color__input"
+        />
+        <div class="form__color__option">
+          <div class="form__color__first color-box"></div>
+          <div class="form__color__second color-box"></div>
+          <div class="form__color__third color-box"></div>
+        </div>
       </div>
     </div>
-    <div class="form__color__box">
+    <div class="form__color">
       <label for="color1" class="form__label"></label>
-      <input type="radio" name="color" id="color1" />
-      <div class="form__color__option">
-        <div class="form__color__fourth color-box"></div>
-        <div class="form__color__fifth color-box"></div>
-        <div class="form__color__sixth color-box"></div>
+      <div class="form__color__box">
+        <input
+          type="radio"
+          name="color"
+          id="color1"
+          class="form__color__input"
+        />
+        <div class="form__color__option">
+          <div class="form__color__fourth color-box"></div>
+          <div class="form__color__fifth color-box"></div>
+          <div class="form__color__sixth color-box"></div>
+        </div>
       </div>
     </div>
-    <div class="form__color__box">
+    <div class="form__color">
       <label for="color1" class="form__label"></label>
-      <input type="radio" name="color" id="color1" />
-      <div class="form__color__option">
-        <div class="form__color__seventh color-box"></div>
-        <div class="form__color__eigth color-box"></div>
-        <div class="form__color__ninenth color-box"></div>
+      <div class="form__color__box">
+        <input
+          type="radio"
+          name="color"
+          id="color1"
+          class="form__color__input"
+        />
+        <div class="form__color__option">
+          <div class="form__color__seventh color-box"></div>
+          <div class="form__color__eighth color-box"></div>
+          <div class="form__color__nineth color-box"></div>
+        </div>
       </div>
     </div>
   </fieldset>
+
   <fieldset class="form__fill">
     <div class="form__box">
       <div class="form__box__item">
@@ -43,41 +65,88 @@
     </div>
       <button class="form__box__button"><i class="fas fa-angle-down down"></i></button>
     </div>
-    <label for="name">Nombre completo</label>
-    <input type="text" name="name" id="name" placeholder="Ej: Sally Jill" />
-    <label for="job">Puesto</label>
-    <input
-      type="text"
-      name="job"
-      id="job"
-      placeholder="Ej: Front-end unicorn"
-    />
-    <label for="image">Imagen de perfil</label>
-    <input type="file" name="image" id="image" />
-    <label for="mail">Email</label>
-    <input
-      type="email"
-      name="mail"
-      id="mail"
-      placeholder="Ej: sally.hill@gmail.com"
-    />
-    <label for="phone">Teléfono</label>
-    <input type="tel" name="phone" id="phone" placeholder="Ej: 555-55-55-55" />
-    <label for="linkedin">Linkedin</label>
-    <input
-      type="url"
-      name="linkedin"
-      id="linkedin"
-      placeholder="Ej: linkedin.com/in/sally-hill"
-    />
-    <label for="github">Github</label>
-    <input
-      type="text"
-      name="github"
-      id="github"
-      placeholder="Ej: @sally-hill"
-    />
+
+    <div class="form__data">
+      <div class="form__data__name">
+        <label for="name">Nombre completo</label>
+        <input
+          class="form__data__input"
+          type="text"
+          name="name"
+          id="name"
+          placeholder="Ej: Sally Jill"
+        />
+      </div>
+      <div class="form__data__job">
+        <label class="form__data__label" for="job">Puesto</label>
+        <input
+          class="form__data__input"
+          type="text"
+          name="job"
+          id="job"
+          placeholder="Ej: Front-end unicorn"
+        />
+      </div>
+
+      <div class="form__data__image">
+        <label for="image">Imagen de perfil</label>
+        <input
+          class="form__data__image__input js__profile-upload-btn"
+          type="file"
+          name="image"
+          id="image"
+        />
+        <div class="form__data__image__buttonsbox">
+          <div class="form__data__btn">
+            <button
+              type="button"
+              class="form__data__image__btn js__profile-trigger"
+            >
+              Añadir imagen
+            </button>
+          </div>
+
+          <div class="form__data__image__preview js__profile-preview"></div>
+        </div>
+      </div>
+      <div class="form__data__contact">
+        <label class="form__data__label" for="mail">Email</label>
+        <input
+          class="form__data__input"
+          type="email"
+          name="mail"
+          id="mail"
+          placeholder="Ej: sally.hill@gmail.com"
+        />
+
+        <label class="form__data__label" for="phone">Teléfono</label>
+        <input
+          class="form__data__input"
+          type="tel"
+          name="phone"
+          id="phone"
+          placeholder="Ej: 555-55-55-55"
+        />
+        <label class="form__data__label" for="linkedin">Linkedin</label>
+        <input
+          class="form__data__input"
+          type="url"
+          name="linkedin"
+          id="linkedin"
+          placeholder="Ej: linkedin.com/in/sally-hill"
+        />
+        <label class="form__data__label" for="github">Github</label>
+        <input
+          class="form__data__input"
+          type="text"
+          name="github"
+          id="github"
+          placeholder="Ej: @sally-hill"
+        />
+      </div>
+    </div>
   </fieldset>
+
   <fieldset class="form__share">
     <div class="form__box">
       <div class="form__box__item">
