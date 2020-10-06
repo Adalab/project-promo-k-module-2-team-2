@@ -28,3 +28,32 @@
   font-size: 14px;
   line-height: 20px;
 }
+.form__box{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  &__item{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    padding-left: 20px;
+  }
+    &__button{
+      justify-self: flex-end;
+      border: none;
+      background: none;
+      color: $colorTertiaryDark;
+      width: 16px;
+      height: 18px;
+      font-size: 18px;
+      padding-right: 20px;
+  
+    }
+  &__title{
+  font-family: $font__secondary;
+  color: $colorTertiaryDark;
+  text-transform: uppercase;
+  font-size: 18px;
+  padding-left: 10px;
+}
+}
