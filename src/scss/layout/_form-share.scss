@@ -6,7 +6,7 @@
     background-color: $colorPrimary;
     border-radius: 12px;
     box-shadow: 0 1px 6px 0 rgba(0, 0, 0, 0.32);
-    margin: 30px 61px;
+    margin: 30px 0px;
 
     &:active {
       background-color: $colorTertiaryMidtoneLight;
@@ -16,7 +16,7 @@
     }
   }
   &--message {
-    margin: 30px 20px;
+    margin: 30px 0px;
     display: flex;
     flex-direction: column;
     align-items: center;
