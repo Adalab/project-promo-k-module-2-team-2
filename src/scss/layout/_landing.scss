@@ -3,6 +3,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  overflow: hidden;
   width: 100%;
   height: 80vh;
   background-color: $colorTertiaryLightMid;
@@ -73,13 +74,14 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    position: absolute;
+    top: 68vh;
     width: 129px;
     height: 42px;
     border-radius: 21px;
     background-color: $colorSecondaryMidtone;
-    margin-top: 38.6px;
     @media (min-width: 768px) {
-      margin-top: 186px;
+      top: 80vh;
       height: 42px;
       width: 129px;
     }

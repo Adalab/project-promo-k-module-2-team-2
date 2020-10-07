@@ -23,6 +23,10 @@
       }
       &__buttonsbox {
         display: flex;
+
+        & .hiddenField {
+          display: none;
+        }
       }
       &__btn {
         width: 140px;
