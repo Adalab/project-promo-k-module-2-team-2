@@ -11,12 +11,39 @@
   font-size: 14px;
   font-weight: 600;
 }
-.f-main {
+[placeholder] {
+  padding: 3px 0px 7px 9px;
+  font-size: 14px;
   font-family: $font__secondary;
 }
+
+// Font Styles
+
+// Family
+.txt-fpri {
+  font-family: $font__secondary;
+}
+.txt-fsec {
+  font-family: $font__secondary;
+}
+.txt-fter {
+  font-family: $font__tertiary;
+}
+// Size
 .txt-sm {
   font-size: 14px;
 }
+.txt-md {
+  font-size: 16px;
+}
+.txt-lg {
+  font-size: 18px;
+}
+.txt-xl {
+  font-size: 24px;
+}
+
+//Color
 .txt-light {
   color: $colorTertiaryDark;
 }
@@ -25,9 +52,4 @@
 }
 .txt-bright {
   color: $colorPrimary;
-}
-[placeholder] {
-  padding: 3px 0px 7px 9px;
-  font-size: 14px;
-  font-family: $font__secondary;
 }
