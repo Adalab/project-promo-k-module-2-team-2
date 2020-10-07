@@ -8,6 +8,10 @@
   &__data {
     display: flex;
     flex-direction: column;
+
+    // interactive show/hide
+    display: none;
+
     &__input {
       display: flex;
       flex-direction: column;
