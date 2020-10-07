@@ -44,8 +44,18 @@
         
 
     &__title {
-        border-left: solid 5px $colorSecondaryDark ;
+        display:flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        height:73px;
+        padding-bottom: 10px;
+       
         
+        &__inner{
+            border-left: solid 5px $colorSecondaryDark;
+            height:42px;
+            
+        }
         
 
 &__name {
@@ -53,7 +63,7 @@
     font-family:$font__tertiary;
     font-weight: bold;
     margin-left: 15px;
-    padding-top:20px;
+    // padding-top:20px;
     font-size:18px;
 }
 &__job {
@@ -71,24 +81,38 @@
             
 }
 .preview__card__sm{
-    margin-top: 10px;
-    margin-bottom:20px;
+    
 
 
 
 &__list {
     
     display:flex;
-    justify-content:space-around;
+    justify-content: space-evenly;
+    padding-top:6px;
    
 
     &__icon {
-        border: 2px solid red;
-        padding: 10px;
+        border: 2px solid $colorSecondaryLight;
+        padding-top:4px;
+        padding-left:5px;
         border-radius: 60px;
-        color: $colorSecondaryDark;
         width: 32px;
         height: 32px;
+
+        & .mobile{
+            padding-left:3px; 
+        }
+
+        & .linkedin {
+            padding-left:1px;
+        }
+
+        &__link {
+            color:$colorSecondaryDark;
+            font-size:18px;
+               
+        }
         
     }
 }
