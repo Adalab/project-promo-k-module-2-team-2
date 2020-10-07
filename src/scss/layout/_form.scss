@@ -38,15 +38,13 @@
       flex-direction: column;
 
       &__input {
-        display: none;
+       display: none;
       }
 
       &__buttonsbox {
         display: flex;
-
-        & .hiddenField {
-          display: none;
-        }
+        
+        
       }
 
       &__btn {
