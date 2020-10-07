@@ -6,11 +6,6 @@
   font-size: 14px;
   line-height: 20px;
 }
-.form__data__label {
-  color: $colorSecondaryDark;
-  font-size: 14px;
-  font-weight: 600;
-}
 [placeholder] {
   padding: 3px 0px 7px 9px;
   font-size: 14px;
@@ -18,6 +13,12 @@
 }
 
 // Font Styles
+
+// Weight
+
+.bold {
+  font-weight: 600;
+}
 
 // Family
 .txt-fpri {
