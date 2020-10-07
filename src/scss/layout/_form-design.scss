@@ -1,25 +1,15 @@
 .form {
   &__label {
     text-transform: uppercase;
-    margin-left: 39px;
-    font-family: $font__secondary;
-    font-size: 14px;
-    color: $colorTertiaryDark;
-    @media (min-width: 768px) {
-      font-size: 14px;
-    }
+    margin-left: 19px;
   }
   &__color {
     display: flex;
     justify-content: space-between;
 
-    // interactive show/hide
-    display: none;
-
     &__box {
       display: flex;
       align-items: center;
-
       margin-right: 20px;
       margin-bottom: 20px;
     }
@@ -33,7 +23,7 @@
       background-color: $colorSecondaryDark;
     }
     &__second {
-      background-color: #438792;
+      background-color: $colorSecondaryMidtone;
     }
     &__third {
       background-color: $colorSecondaryLight;

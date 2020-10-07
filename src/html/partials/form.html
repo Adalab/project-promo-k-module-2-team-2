@@ -1,15 +1,20 @@
-<form action="/signup" method="post" class="form" role="form">
+<form
+  action="/signup"
+  method="post"
+  class="form txt-fsec txt-sm txt-light"
+  role="form"
+>
   <fieldset class="form__design column">
     <div class="form__box">
       <div class="form__box__item">
         <i class="far fa-object-ungroup icon" aria-hidden="true"></i>
-        <h2 class="form__box__title" aria-label="Diseña">Diseña</h2>
+        <h2 class="form__box__title txt-lg" aria-label="Diseña">Diseña</h2>
       </div>
       <button class="form__box__button">
         <i class="fas fa-angle-down down"></i>
       </button>
     </div>
-    <div class="form__color">
+    <div class="form__color m-top">
       <label for="color1" class="form__label">Colores</label>
       <div class="form__color__box">
         <input
@@ -59,11 +64,13 @@
     </div>
   </fieldset>
 
-  <fieldset class="form__fill column">
+  <fieldset class="form__fill column txt-dark bold">
     <div class="form__box">
       <div class="form__box__item">
         <i class="far fa-keyboard icon" aria-hidden="true"></i>
-        <h2 class="form__box__title" aria-label="Rellena">Rellena</h2>
+        <h2 class="form__box__title txt-lg txt-light" aria-label="Rellena">
+          Rellena
+        </h2>
       </div>
       <button class="form__box__button">
         <i class="fas fa-angle-down down"></i>
@@ -71,8 +78,8 @@
     </div>
 
     <div class="form__data">
-      <div class="form__data__name" aria-label="Nombre completo">
-        <label for="name">Nombre completo</label>
+      <div class="form__data__name m-top" aria-label="Nombre completo">
+        <label class="form__data__label" for="name">Nombre completo</label>
         <input
           class="form__data__input"
           type="text"
@@ -81,7 +88,7 @@
           placeholder="Ej: Sally Jill"
         />
       </div>
-      <div class="form__data__job" aria-label="Puesto">
+      <div class="form__data__name" aria-label="Puesto">
         <label class="form__data__label" for="job">Puesto</label>
         <input
           class="form__data__input"
@@ -92,8 +99,8 @@
         />
       </div>
 
-      <div class="form__data__image" aria-label="Imagen de perfil">
-        <label for="image">Imagen de perfil</label>
+      <div class="form__data__name" aria-label="Imagen de perfil">
+        <label class="form__data__label" for="image">Imagen de perfil</label>
         <input
           class="form__data__image__input js__profile-upload-btn"
           type="file"
@@ -104,7 +111,7 @@
           <div class="form__data__btn">
             <button
               type="button"
-              class="form__data__image__btn js__profile-trigger"
+              class="form__data__image__btn js__profile-trigger txt-sm txt-wh txt-fsec"
               aria-label="Añadir imagen"
             >
               Añadir imagen
@@ -114,7 +121,7 @@
           <div class="form__data__image__preview js__profile-preview"></div>
         </div>
       </div>
-      <div class="form__data__contact" aria-label="Contacto">
+      <div class="form__data__name" aria-label="Contacto">
         <label class="form__data__label" for="mail">Email</label>
         <input
           class="form__data__input"
@@ -156,21 +163,31 @@
     <div class="form__box">
       <div class="form__box__item">
         <i class="fas fa-share-alt icon" aria-hidden="true"></i>
-        <h2 class="form__box__title" aria-label="Comparte">Comparte</h2>
+        <h2 class="form__box__title txt-lg" aria-label="Comparte">Comparte</h2>
       </div>
       <button class="form__box__button">
         <i class="fas fa-angle-down down"></i>
       </button>
     </div>
-    <button type="submit" class="form__share--button" title="Crear tarjeta">
+    <button
+      type="submit"
+      class="form__share--button txt-lg txt-wh txt-up txt-fsec"
+      title="Crear tarjeta"
+    >
       <i class="far fa-address-card"></i>Crear tarjeta
     </button>
     <div class="form__share--message">
-      <h3 class="form__box__title h3">La tarjeta ha sido creada:</h3>
-      <a class="card-link" href="#" title="Link a la nueva tarjeta"
+      <h3 class="form__box__title h3 txt-lg">La tarjeta ha sido creada:</h3>
+      <a
+        class="card-link txt-bright txt-xs"
+        href="#"
+        title="Link a la nueva tarjeta"
         >Link a la nueva tarjeta</a
       >
-      <button class="share-twitter" title="Compartir en twitter">
+      <button
+        class="share-twitter txt-wh txt-fsec txt-sm"
+        title="Compartir en twitter"
+      >
         <i class="fab fa-twitter"></i>Compartir en twitter
       </button>
     </div>
