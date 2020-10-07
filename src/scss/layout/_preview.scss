@@ -1,4 +1,5 @@
 .preview {
+
         height:457px;
         @media all and (min-width:768px){
             height: 826px;
@@ -75,21 +76,40 @@
     margin-left: 15px;
 }
 
- 
+}
+
+&__box {
+    width:240px;
+    height: 200px;
+    background-image: url(https://quizlet.com/cdn-cgi/image/f=auto,fit=cover,h=200,onerror=redirect,w=240/https://o.quizlet.com/-eqTyjYDzs5teZgDoQi9aQ.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    
+    &__img {
+        display: none;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        width:100%;
+        height: 100%;
+
+    }
 }
   }  
+  
             
 }
+
+
 .preview__card__sm{
     
-
-
-
 &__list {
     
     display:flex;
     justify-content: space-evenly;
-    padding-top:6px;
+    padding-top:10px;
    
 
     &__icon {

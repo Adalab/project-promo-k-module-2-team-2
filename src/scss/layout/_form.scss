@@ -59,6 +59,10 @@
         border: $colorSecondaryLight 1px solid;
         margin-top: 8px;
         margin-left: 20px;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    
       }
     }
 
@@ -88,9 +92,6 @@
       font-size: 14px;
     }
 
-    & [type="file"] {
-    color: transparent;
-    }
   }
 }
 
