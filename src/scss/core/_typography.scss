@@ -32,6 +32,9 @@
 }
 
 // Size
+.txt-xs {
+  font-size: 12px;
+}
 .txt-sm {
   font-size: 14px;
 }
@@ -54,4 +57,18 @@
 }
 .txt-bright {
   color: $colorPrimary;
+}
+.txt-wh {
+  color: $colorTertiaryLight;
+}
+
+// Transform
+.txt-up {
+  text-transform: uppercase;
+}
+
+// Margin
+
+.m-top {
+  margin-top: 25px;
 }
