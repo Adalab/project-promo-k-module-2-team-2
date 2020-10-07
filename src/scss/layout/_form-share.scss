@@ -6,7 +6,7 @@
     background-color: $colorPrimary;
     border-radius: 12px;
     box-shadow: 0 1px 6px 0 rgba(0, 0, 0, 0.32);
-    margin: 30px 61px;
+    margin: 30px 0px;
 
     &:active {
       background-color: $colorTertiaryMidtoneLight;
@@ -16,7 +16,7 @@
     }
   }
   &--message {
-    margin: 30px 20px;
+    margin: 30px 0px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -25,6 +25,7 @@
 
     & .h3 {
       margin: 20px 0 10px 0;
+      text-transform: initial;
     }
 
     & .share-twitter {
@@ -32,7 +33,8 @@
       height: 30px;
       background-color: #00a0f5;
       border-radius: 3px;
-      margin: 10px 0 30px 0;
+      margin-top: 10px;
+      margin-bottom: 20px;
       box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.32);
       & .fa-twitter {
         margin-right: 9.5px;

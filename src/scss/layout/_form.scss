@@ -1,4 +1,10 @@
 .form {
+  background-image: linear-gradient(
+    to bottom,
+    $colorTertiaryLightMid,
+    $colorTertiaryLight 9%
+  );
+  padding: 20px 0 30px 0;
   &__data {
     display: flex;
     flex-direction: column;
@@ -21,10 +27,6 @@
 
       &__buttonsbox {
         display: flex;
-
-        & .hiddenField {
-          display: none;
-        }
       }
       &__btn {
         width: 140px;
@@ -52,7 +54,8 @@
 }
 
 .column {
-  margin: 30px 20px;
+  margin: 0px 20px 0px 20px;
+  padding: 10px 0 10px 0;
   border-bottom: $colorTertiaryMidtone solid 1px;
 
   @media (min-width: 768px) {
