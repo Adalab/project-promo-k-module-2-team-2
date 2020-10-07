@@ -20,6 +20,12 @@
 .txt-light {
   color: $colorTertiaryDark;
 }
+.txt-dark {
+  color: $colorSecondaryDark;
+}
+.txt-bright {
+  $colorPrimary
+}
 [placeholder] {
   padding: 3px 0px 7px 9px;
   font-size: 14px;
