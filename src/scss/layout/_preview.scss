@@ -48,23 +48,23 @@
         flex-direction: column;
         justify-content: flex-end;
         height:73px;
-        padding-bottom: 10px;
+        padding-bottom: 12px;
        
         
         &__inner{
             border-left: solid 5px $colorSecondaryDark;
             height:42px;
             
-        }
-        
+        }  
 
 &__name {
     color: $colorSecondaryDark;
     font-family:$font__tertiary;
     font-weight: bold;
     margin-left: 15px;
-    // padding-top:20px;
     font-size:18px;
+    font-weight:bold;
+    
 }
 &__job {
     color:$colorTertiaryDark;
