@@ -1,8 +1,4 @@
 .form {
-  // &__design {
-  //   width: 100%;
-  //   height: 224px;
-  // }
   &__label {
     text-transform: uppercase;
     margin-left: 39px;
@@ -16,6 +12,10 @@
   &__color {
     display: flex;
     justify-content: space-between;
+
+    // interactive show/hide
+    display: none;
+
     &__box {
       display: flex;
       align-items: center;
