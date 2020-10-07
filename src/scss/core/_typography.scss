@@ -22,7 +22,7 @@
 
 // Family
 .txt-fpri {
-  font-family: $font__secondary;
+  font-family: $font__primary;
 }
 .txt-fsec {
   font-family: $font__secondary;
@@ -45,7 +45,10 @@
   font-size: 18px;
 }
 .txt-xl {
-  font-size: 24px;
+  font-size: 19.2px;
+  @media (min-width: 768px) {
+    font-size: 24px;
+  }
 }
 
 //Color

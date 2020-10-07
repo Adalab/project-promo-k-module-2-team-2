@@ -5,7 +5,6 @@
   align-items: center;
   width: 100%;
   height: 80vh;
-  font-family: $font__secondary;
   background-color: $colorTertiaryLightMid;
   @media (min-width: 768px) {
     height: 90vh;
@@ -26,16 +25,7 @@
       margin-top: 31px;
       margin-bottom: 27px;
     }
-    &__title {
-      font-family: $font__primary;
-      color: $colorPrimary;
-      font-size: 19.2px;
-      @media (min-width: 768px) {
-        font-size: 24px;
-      }
-    }
     &__text {
-      color: $colorSecondaryDark;
       font-size: 12.8px;
       @media (min-width: 768px) {
         font-size: 16px;
@@ -73,7 +63,6 @@
       align-items: center;
     }
     &__text {
-      color: $colorTertiaryDark;
       font-size: 12.8px;
       @media (min-width: 768px) {
         font-size: 16px;
@@ -93,12 +82,6 @@
       margin-top: 186px;
       height: 42px;
       width: 129px;
-    }
-    &__link {
-      color: $colorTertiaryLight;
-      text-transform: uppercase;
-      font-size: 16px;
-      font-weight: 500;
     }
   }
 }
