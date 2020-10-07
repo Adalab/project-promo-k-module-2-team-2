@@ -2,78 +2,9 @@
   &__data {
     display: flex;
     flex-direction: column;
-    margin: 0 17px;
-    @media all and (min-width: 768px) {
-      margin: 0 40px;
-    }
-
-    &__name {
-      font-family: $font__secondary;
-      color: $colorSecondaryDark;
-      font-size: 14px;
-      display: flex;
-      flex-direction: column;
-    }
-
-    &__job {
-      font-family: $font__secondary;
-      color: $colorSecondaryDark;
-      font-size: 14px;
-      display: flex;
-      flex-direction: column;
-    }
-
-    &__image {
-      font-family: $font__secondary;
-      color: $colorSecondaryDark;
-      font-size: 14px;
-      display: flex;
-      flex-direction: column;
-
-      &__input {
-       display: none;
-      }
-
-      &__buttonsbox {
-        display: flex;
-        
-        
-      }
-
-      &__btn {
-        width: 140px;
-        height: 30px;
-        background-color: $colorPrimary;
-        color: $colorTertiaryLight;
-        font-family: $font__secondary;
-        font-size: 14px;
-        border-style: none;
-        border-radius: 3px;
-        margin-top: 7px;
-        margin-bottom: 20px;
-      }
-
-      &__preview {
-        width: 30px;
-        height: 30px;
-        border: $colorSecondaryLight 1px solid;
-        margin-top: 8px;
-        margin-left: 20px;
-      }
-    }
-
-    &__contact {
-      display: flex;
-      flex-direction: column;
-    }
-
-    &__label {
-      font-family: $font__secondary;
-      color: $colorSecondaryDark;
-      font-size: 14px;
-    }
-
     &__input {
+      display: flex;
+      flex-direction: column;
       border: $colorSecondaryLight 1px solid;
       margin-top: 7px;
       margin-bottom: 20px;
@@ -83,11 +14,37 @@
         width: 329px;
       }
     }
-    & [placeholder] {
-      padding: 3px 0px 7px 9px;
-      font-size: 14px;
-    }
+    &__image {
+      &__input {
+        display: none;
+      }
 
+      &__buttonsbox {
+        display: flex;
+
+        & .hiddenField {
+          display: none;
+        }
+      }
+      &__btn {
+        width: 140px;
+        height: 30px;
+        background-color: $colorPrimary;
+        color: $colorTertiaryLight;
+        font-size: 14px;
+        border-style: none;
+        border-radius: 3px;
+        margin-top: 7px;
+        margin-bottom: 20px;
+      }
+      &__preview {
+        width: 30px;
+        height: 30px;
+        border: $colorSecondaryLight 1px solid;
+        margin-top: 8px;
+        margin-left: 20px;
+      }
+    }
     & [type="file"] {
       color: transparent;
     }
