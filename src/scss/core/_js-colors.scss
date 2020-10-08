@@ -1,40 +1,68 @@
-// First Palette
-.nm-op1 {
-  color: green;
-}
-.bd-op1 {
-  border-left: rgb(80, 243, 15) solid 5px;
-}
-.cr-op1 {
-  border: 2px solid rgb(102, 255, 0);
-}
-
-// Second Palette
-.nm-op2 {
-  color: red;
-}
-.bd-op2 {
-  border-left: rgb(219, 74, 74) solid 5px;
-}
-.cr-op2 {
-  border: 2px solid rgb(185, 38, 38);
-}
-
-// Third palette
-.nm-op3 {
-  color: purple;
-}
-.bd-op3 {
-  border-left: rgb(243, 106, 52) solid 5px;
-}
-.cr-op3 {
-  border: 2px solid rgb(228, 98, 195);
-}
-
 // Default
 .brd {
   border-left: solid 5px $colorSecondaryMidtone;
 }
 .circ {
   border: 2px solid $colorSecondaryLight;
+}
+.ico{
+  color: $colorSecondaryDark;
+}
+
+// ico js-ico
+
+// First Palette
+.nm-op1 {
+  color: $colorSecondaryDark;
+}
+.bd-op1 {
+  border-left: $colorSecondaryMidtone solid 5px;
+}
+.cr-op1 {
+  border: 2px solid $colorSecondaryLight;
+}
+.ico-op1 {
+  color:$colorSecondaryDark;
+}
+
+// Second Palette
+.nm-op2 {
+  color: $colorOptionSecondDark;
+}
+.bd-op2 {
+  border-left:$colorOptionSecondMidtone solid 5px;
+}
+.cr-op2 {
+  border: 2px solid $colorOptionSecondLight;
+}
+.ico-op2 {
+  color: $colorOptionSecondDark;
+}
+
+// Third palette
+.nm-op3 {
+  color: $colorOptionThirdDark;
+}
+.bd-op3 {
+  border-left: $colorOptionThirdMidtone solid 5px;
+}
+.cr-op3 {
+  border: 2px solid $colorOptionThirdLight;
+}
+.ico-op3 {
+  color: $colorOptionThirdDark;
+}
+
+// Fourth palette
+.nm-op4 {
+  color: purple;
+}
+.bd-op4 {
+  border-left: rgb(243, 106, 52) solid 5px;
+}
+.cr-op4 {
+  border: 2px solid rgb(243, 106, 52);
+}
+.ico-op4 {
+  color: purple;
 }
