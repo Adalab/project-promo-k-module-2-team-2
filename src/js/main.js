@@ -19,6 +19,8 @@ function handleButtonArrowClick(event) {
   } else if (openedButton.classList.contains("btn-rotate") === false) {
     formBoxShare.classList.remove("visible");
   }
+
+  event.preventDefault();
 }
 
 buttonArrowDesign.addEventListener("click", handleButtonArrowClick);
