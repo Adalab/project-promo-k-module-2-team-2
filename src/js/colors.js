@@ -98,12 +98,15 @@ function colorChange() {
     icon.classList.remove("ico-op1");
     icon.classList.remove("ico-op2");
   }
+
+  // Console log
   console.log(name);
   console.log(border);
   console.log(circle);
   console.log(icon);
 }
 
+// Event listeners on input
 colorOption1.addEventListener("click", colorChange);
 colorOption2.addEventListener("click", colorChange);
 colorOption3.addEventListener("click", colorChange);
