@@ -1,13 +1,40 @@
-.first-option {
-  color: $colorSecondaryDark;
+// First Palette
+.nm-op1 {
+  color: green;
+}
+.bd-op1 {
+  border-left: rgb(80, 243, 15) solid 5px;
+}
+.cr-op1 {
+  border: 2px solid rgb(102, 255, 0);
 }
 
 // Second Palette
-.second-option {
-  color: $colorOptionSecondDark;
+.nm-op2 {
+  color: red;
+}
+.bd-op2 {
+  border-left: rgb(219, 74, 74) solid 5px;
+}
+.cr-op2 {
+  border: 2px solid rgb(185, 38, 38);
 }
 
 // Third palette
-.third-option {
-  color: $colorOptionThirdDark;
+.nm-op3 {
+  color: purple;
+}
+.bd-op3 {
+  border-left: rgb(243, 106, 52) solid 5px;
+}
+.cr-op3 {
+  border: 2px solid rgb(228, 98, 195);
+}
+
+// Default
+.brd {
+  border-left: solid 5px $colorSecondaryMidtone;
+}
+.circ {
+  border: 2px solid $colorSecondaryLight;
 }
