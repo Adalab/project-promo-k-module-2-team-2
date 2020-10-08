@@ -4,18 +4,21 @@ const buttonArrowDesign = document.querySelector(".form__box__button--design");
 const buttonArrowFill = document.querySelector(".form__box__button--fill");
 const buttonArrowShare = document.querySelector(".form__box__button--share");
 
+const formBoxDesign = document.querySelector(".form__color");
+const formBoxFill = document.querySelector(".form__data");
+const formBoxShare = document.querySelector(".form__share--button");
+
 function handleButtonArrowClick(event) {
   const openedButton = event.currentTarget;
   openedButton.classList.toggle("btn-rotate");
   console.log("rotate");
 
-  //   const formBoxDesign = document.querySelector(".form__color");
-  //   const formBoxFill = document.querySelector(".form__data");
-  //   const formBoxShare = document.querySelector(".form__share--button");
-
-  //   const showContent = event.currentTarget;
-  //   showContent.classList.toggle("visible");
-  //   console.log("visible");
+  if (openedButton.classList.contains("btn-rotate") === true) {
+    formBoxShare.classList.add("visible");
+    console.log("visible");
+  } else if (openedButton.classList.contains("btn-rotate") === false) {
+    formBoxShare.classList.remove("visible");
+  }
 }
 
 buttonArrowDesign.addEventListener("click", handleButtonArrowClick);
