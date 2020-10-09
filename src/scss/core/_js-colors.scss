@@ -5,10 +5,10 @@
     color: $colorSecondaryDark;
   }
   .preview__card__title__inner {
-    border-left: solid 5px $colorSecondaryMidtone;
+    border-color: $colorSecondaryMidtone;
   }
   .preview__card__sm__list__icon {
-    border: 2px solid $colorSecondaryLight;
+    border-color: $colorSecondaryLight;
   }
   .preview__card__sm__list__icon__link {
     color: $colorSecondaryDark;
@@ -22,10 +22,10 @@
     color: $colorSecondaryDark;
   }
   .preview__card__title__inner {
-    border-left: $colorSecondaryMidtone solid 5px;
+    border-color: $colorSecondaryMidtone;
   }
   .preview__card__sm__list__icon {
-    border: 2px solid $colorSecondaryLight;
+    border-color: $colorSecondaryLight;
   }
   .preview__card__sm__list__icon__link {
     color: $colorSecondaryDark;
@@ -39,10 +39,10 @@
     color: $colorOptionSecondDark;
   }
   .preview__card__title__inner {
-    border-left: $colorOptionSecondMidtone solid 5px;
+    border-color: $colorOptionSecondMidtone;
   }
   .preview__card__sm__list__icon {
-    border: 2px solid $colorOptionSecondLight;
+    border-color: $colorOptionSecondLight;
   }
   .preview__card__sm__list__icon__link {
     color: $colorOptionSecondDark;
@@ -56,10 +56,10 @@
     color: $colorOptionThirdDark;
   }
   .preview__card__title__inner {
-    border-left: $colorOptionThirdMidtone solid 5px;
+    border-color: $colorOptionThirdMidtone;
   }
   .preview__card__sm__list__icon {
-    border: 2px solid $colorOptionThirdLight;
+    border-color: $colorOptionThirdLight;
   }
   .preview__card__sm__list__icon__link {
     color: $colorOptionThirdDark;
@@ -73,10 +73,10 @@
     color: purple;
   }
   .preview__card__title__inner {
-    border-left: rgb(243, 106, 52) solid 5px;
+    border-color: rgb(243, 106, 52);
   }
   .preview__card__sm__list__icon {
-    border: 2px solid rgb(243, 106, 52);
+    border-color: rgb(243, 106, 52);
   }
   .preview__card__sm__list__icon__link {
     color: purple;

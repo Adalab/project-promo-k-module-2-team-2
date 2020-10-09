@@ -39,6 +39,7 @@
 
       &__inner {
         height: 42px;
+        border-left: solid 5px;
       }
 
       &__name {
@@ -87,6 +88,7 @@
       border-radius: 60px;
       width: 32px;
       height: 32px;
+      border: 2px solid;
 
       & .mobile {
         padding-left: 3px;
