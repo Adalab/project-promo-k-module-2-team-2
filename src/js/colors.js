@@ -10,7 +10,7 @@ const colorOption3 = document.querySelector('.js-color3');
 
 function colorChange() {
 
-  // Card selector
+  // Card class selector
 
   const palette = document.querySelector('.js-palette');
 
