@@ -16,7 +16,7 @@ function colorChange() {
 
   // Card class remove
 
-  palette.classList.remove('default-palette');
+  palette.classList.remove('default-palette'); // Default
 
   palette.classList.remove('palette1');
   palette.classList.remove('palette2');
@@ -34,6 +34,7 @@ function colorChange() {
 
   if (colorOption2.checked === true) {
 
+    //Palette 2
     palette.classList.add('palette2');
   }
 
@@ -41,6 +42,7 @@ function colorChange() {
 
   if (colorOption3.checked === true) {
 
+    //Palette 3
     palette.classList.add('palette3');
 
   }
