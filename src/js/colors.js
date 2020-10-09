@@ -44,9 +44,6 @@ function colorChange() {
     palette.classList.add("palette3");
 
   }
-
-  // Console log
-  console.log(palette);
 }
 
 // Event listeners on input

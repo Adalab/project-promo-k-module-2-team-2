@@ -67,15 +67,18 @@
 }
 
 // Fourth palette
-.nm-op4 {
-  color: purple;
-}
-.bd-op4 {
-  border-left: rgb(243, 106, 52) solid 5px;
-}
-.cr-op4 {
-  border: 2px solid rgb(243, 106, 52);
-}
-.ico-op4 {
-  color: purple;
+
+.palette4 {
+  .preview__card__title__name {
+    color: purple;
+  }
+  .preview__card__title__inner {
+    border-left: rgb(243, 106, 52) solid 5px;
+  }
+  .preview__card__sm__list__icon {
+    border: 2px solid rgb(243, 106, 52);
+  }
+  .preview__card__sm__list__icon__link {
+    color: purple;
+  }
 }
