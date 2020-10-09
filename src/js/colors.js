@@ -6,9 +6,6 @@ const colorOption1 = document.querySelector(".js-color1");
 const colorOption2 = document.querySelector(".js-color2");
 const colorOption3 = document.querySelector(".js-color3");
 
-
-const icon = document.querySelectorAll(".js-ico");
-
 //Color change function
 
 function colorChange() {
@@ -18,6 +15,7 @@ function colorChange() {
   const name = document.querySelector(".js-name");
   const border = document.querySelector(".js-border");
   const circle = document.querySelector(".js-circ");
+  const icon = document.querySelector(".js-ico");
 
   // Card default class remove
 
@@ -30,6 +28,18 @@ function colorChange() {
   name.classList.remove("nm-op2");
   name.classList.remove("nm-op3");
 
+  border.classList.remove("bd-op1");
+  border.classList.remove("bd-op2");
+  border.classList.remove("bd-op3");
+  
+  circle.classList.remove("cr-op1");
+  circle.classList.remove("cr-op2");
+  circle.classList.remove("cr-op3");
+  
+  icon.classList.remove("ico-op1");
+  icon.classList.remove("ico-op2");
+  icon.classList.remove("ico-op3");
+
   // Option 1
 
   if (colorOption1.checked === true) {
@@ -39,18 +49,12 @@ function colorChange() {
 
     //Border 1
     border.classList.add("bd-op1");
-    border.classList.remove("bd-op2");
-    border.classList.remove("bd-op3");
 
     //Circle 1
     circle.classList.add("cr-op1");
-    circle.classList.remove("cr-op2");
-    circle.classList.remove("cr-op3");
 
     // Icon 1
     icon.classList.add("ico-op1");
-    icon.classList.remove("ico-op2");
-    icon.classList.remove("ico-op3");
   }
 
   // Option 2
@@ -62,18 +66,12 @@ function colorChange() {
 
     //Border 2
     border.classList.add("bd-op2");
-    border.classList.remove("bd-op1");
-    border.classList.remove("bd-op3");
 
     //Circle 2
     circle.classList.add("cr-op2");
-    circle.classList.remove("cr-op1");
-    circle.classList.remove("cr-op3");
 
     // Icon 2
     icon.classList.add("ico-op2");
-    icon.classList.remove("ico-op1");
-    icon.classList.remove("ico-op3");
   }
 
 // Option 3
@@ -85,18 +83,12 @@ function colorChange() {
 
     //Border 3
     border.classList.add("bd-op3");
-    border.classList.remove("bd-op1");
-    border.classList.remove("bd-op2");
 
     //Circle 3
     circle.classList.add("cr-op3");
-    circle.classList.remove("cr-op1");
-    circle.classList.remove("cr-op2");
 
     // Icon 3
     icon.classList.add("ico-op3");
-    icon.classList.remove("ico-op1");
-    icon.classList.remove("ico-op2");
   }
 
   // Console log
@@ -108,7 +100,6 @@ function colorChange() {
 
 // Event listeners on input
 
-for (let i = 0; i < icon.length; i++) {
 colorOption1.addEventListener("click", colorChange);
 colorOption2.addEventListener("click", colorChange);
-colorOption3.addEventListener("click", colorChange);}
+colorOption3.addEventListener("click", colorChange);
