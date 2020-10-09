@@ -16,6 +16,7 @@ function colorChange() {
   const border = document.querySelector(".js-border");
   const circle = document.querySelector(".js-circ");
   const icon = document.querySelector(".js-ico");
+  const palette = document.querySelector(".js-palette");
 
   // Card default class remove
 
@@ -23,20 +24,19 @@ function colorChange() {
   border.classList.remove("brd");
   circle.classList.remove("circ");
 
+  palette.classList.remove("palette1");
+  palette.classList.remove("palette2");
+  palette.classList.remove("palette3");
   
-  name.classList.remove("nm-op1");
   name.classList.remove("nm-op2");
   name.classList.remove("nm-op3");
 
-  border.classList.remove("bd-op1");
   border.classList.remove("bd-op2");
   border.classList.remove("bd-op3");
   
-  circle.classList.remove("cr-op1");
   circle.classList.remove("cr-op2");
   circle.classList.remove("cr-op3");
   
-  icon.classList.remove("ico-op1");
   icon.classList.remove("ico-op2");
   icon.classList.remove("ico-op3");
 
@@ -44,17 +44,8 @@ function colorChange() {
 
   if (colorOption1.checked === true) {
 
-    //Name 1
-    name.classList.add("nm-op1");
-
-    //Border 1
-    border.classList.add("bd-op1");
-
-    //Circle 1
-    circle.classList.add("cr-op1");
-
-    // Icon 1
-    icon.classList.add("ico-op1");
+    //Palette 1
+    palette.classList.add("palette1");
   }
 
   // Option 2

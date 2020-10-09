@@ -67,25 +67,48 @@
   color: purple;
 }
 
+// Whole palette
+
 .palette1 {
   .preview__card__title__name {
-    color: green;
+    color: $colorSecondaryDark;
+  }
+  .preview__card__title__inner {
+    border-left: $colorSecondaryMidtone solid 5px;
+  }
+  .preview__card__sm__list__icon {
+    border: 2px solid $colorSecondaryLight;
+  }
+  .preview__card__sm__list__icon__link {
+    color: $colorSecondaryDark;
+  }
+}
+.palette2 {
+  .preview__card__title__name {
+    color: blueviolet;
   }
   .preview__card__title__job {
-    color: green;
+    color: blueviolet;
   }
-  .icon {
-    color: green;
+  .preview__card__sm__list__icon {
+    color: blueviolet;
+  }
+  .preview__card__sm__list__icon__link {
+    color: blueviolet;
   }
 }
 
-// Color palettes
-
-.palette2 {
+.palette3 {
   .preview__card__title__name {
-    color: red;
+    color: green;
   }
   .preview__card__title__job {
-    color: red;
+    color: green;
+  }
+  .preview__card__sm__list__icon {
+    color: green;
+  }
+  .preview__card__sm__list__icon__link {
+    color: green;
   }
 }
