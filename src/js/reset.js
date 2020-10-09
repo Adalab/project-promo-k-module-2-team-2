@@ -44,4 +44,7 @@ function colorReset (){
 // //evento sobre el botón.
 reset.addEventListener ('click',changeName);
 reset.addEventListener ('click',colorReset);
+// //evento sobre el botón.
+// name.addEventListener('keyup',changeInput);
+reset.addEventListener ('click',changeName);
 // reset.addEventListener ('click',changeJob);
