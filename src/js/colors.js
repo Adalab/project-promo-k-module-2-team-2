@@ -37,7 +37,7 @@ function colorChange() {
     palette.classList.add("palette2");
   }
 
-// Option 3
+  // Option 3
 
   if (colorOption3.checked === true) {
 
