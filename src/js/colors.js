@@ -6,6 +6,9 @@ const colorOption1 = document.querySelector(".js-color1");
 const colorOption2 = document.querySelector(".js-color2");
 const colorOption3 = document.querySelector(".js-color3");
 
+
+const icon = document.querySelectorAll(".js-ico");
+
 //Color change function
 
 function colorChange() {
@@ -15,14 +18,17 @@ function colorChange() {
   const name = document.querySelector(".js-name");
   const border = document.querySelector(".js-border");
   const circle = document.querySelector(".js-circ");
-  const icon = document.querySelector(".js-ico")
 
   // Card default class remove
 
   name.classList.remove("txt-dark");
   border.classList.remove("brd");
   circle.classList.remove("circ");
-  icon.classList.remove("ico");
+
+  
+  name.classList.remove("nm-op1");
+  name.classList.remove("nm-op2");
+  name.classList.remove("nm-op3");
 
   // Option 1
 
@@ -30,8 +36,6 @@ function colorChange() {
 
     //Name 1
     name.classList.add("nm-op1");
-    name.classList.remove("nm-op2");
-    name.classList.remove("nm-op3");
 
     //Border 1
     border.classList.add("bd-op1");
@@ -55,8 +59,6 @@ function colorChange() {
 
     //Name 2
     name.classList.add("nm-op2");
-    name.classList.remove("nm-op1");
-    name.classList.remove("nm-op3");
 
     //Border 2
     border.classList.add("bd-op2");
@@ -80,8 +82,6 @@ function colorChange() {
 
     //Name 3
     name.classList.add("nm-op3");
-    name.classList.remove("nm-op1");
-    name.classList.remove("nm-op2");
 
     //Border 3
     border.classList.add("bd-op3");
@@ -107,6 +107,8 @@ function colorChange() {
 }
 
 // Event listeners on input
+
+for (let i = 0; i < icon.length; i++) {
 colorOption1.addEventListener("click", colorChange);
 colorOption2.addEventListener("click", colorChange);
-colorOption3.addEventListener("click", colorChange);
+colorOption3.addEventListener("click", colorChange);}

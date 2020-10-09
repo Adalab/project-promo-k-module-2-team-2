@@ -5,7 +5,7 @@
 .circ {
   border: 2px solid $colorSecondaryLight;
 }
-.ico{
+.ico {
   color: $colorSecondaryDark;
 }
 
@@ -22,7 +22,7 @@
   border: 2px solid $colorSecondaryLight;
 }
 .ico-op1 {
-  color:$colorSecondaryDark;
+  color: $colorSecondaryDark;
 }
 
 // Second Palette
@@ -30,7 +30,7 @@
   color: $colorOptionSecondDark;
 }
 .bd-op2 {
-  border-left:$colorOptionSecondMidtone solid 5px;
+  border-left: $colorOptionSecondMidtone solid 5px;
 }
 .cr-op2 {
   border: 2px solid $colorOptionSecondLight;
@@ -65,4 +65,24 @@
 }
 .ico-op4 {
   color: purple;
+}
+
+.palette1 {
+  .preview__card__title__name {
+    color: green;
+  }
+  .preview__card__title__job {
+    color: green;
+  }
+  .icon {
+    color: green;
+  }
+}
+.palette2 {
+  .preview__card__title__name {
+    color: red;
+  }
+  .preview__card__title__job {
+    color: red;
+  }
 }
