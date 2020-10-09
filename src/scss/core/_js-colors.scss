@@ -1,73 +1,21 @@
-// Default
-.brd {
-  border-left: solid 5px $colorSecondaryMidtone;
-}
-.circ {
-  border: 2px solid $colorSecondaryLight;
-}
-.ico {
-  color: $colorSecondaryDark;
+// Default palette
+
+.palette-default {
+  .preview__card__title__name {
+    color: $colorSecondaryDark;
+  }
+  .preview__card__title__inner {
+    border-left: solid 5px $colorSecondaryMidtone;
+  }
+  .preview__card__sm__list__icon {
+    border: 2px solid $colorSecondaryLight;
+  }
+  .preview__card__sm__list__icon__link {
+    color: $colorSecondaryDark;
+  }
 }
 
-// ico js-ico
-
-// First Palette
-.nm-op1 {
-  color: $colorSecondaryDark;
-}
-.bd-op1 {
-  border-left: $colorSecondaryMidtone solid 5px;
-}
-.cr-op1 {
-  border: 2px solid $colorSecondaryLight;
-}
-.ico-op1 {
-  color: $colorSecondaryDark;
-}
-
-// Second Palette
-.nm-op2 {
-  color: $colorOptionSecondDark;
-}
-.bd-op2 {
-  border-left: $colorOptionSecondMidtone solid 5px;
-}
-.cr-op2 {
-  border: 2px solid $colorOptionSecondLight;
-}
-.ico-op2 {
-  color: $colorOptionSecondDark;
-}
-
-// Third palette
-.nm-op3 {
-  color: $colorOptionThirdDark;
-}
-.bd-op3 {
-  border-left: $colorOptionThirdMidtone solid 5px;
-}
-.cr-op3 {
-  border: 2px solid $colorOptionThirdLight;
-}
-.ico-op3 {
-  color: $colorOptionThirdDark;
-}
-
-// Fourth palette
-.nm-op4 {
-  color: purple;
-}
-.bd-op4 {
-  border-left: rgb(243, 106, 52) solid 5px;
-}
-.cr-op4 {
-  border: 2px solid rgb(243, 106, 52);
-}
-.ico-op4 {
-  color: purple;
-}
-
-// Whole palette
+// First palette
 
 .palette1 {
   .preview__card__title__name {
@@ -83,32 +31,51 @@
     color: $colorSecondaryDark;
   }
 }
+
+// Second Palette
+
 .palette2 {
   .preview__card__title__name {
-    color: blueviolet;
+    color: $colorOptionSecondDark;
   }
-  .preview__card__title__job {
-    color: blueviolet;
+  .preview__card__title__inner {
+    border-left: $colorOptionSecondMidtone solid 5px;
   }
   .preview__card__sm__list__icon {
-    color: blueviolet;
+    border: 2px solid $colorOptionSecondLight;
   }
   .preview__card__sm__list__icon__link {
-    color: blueviolet;
+    color: $colorOptionSecondDark;
   }
 }
 
+// Third palette
+
 .palette3 {
   .preview__card__title__name {
-    color: green;
+    color: $colorOptionThirdDark;
   }
-  .preview__card__title__job {
-    color: green;
+  .preview__card__title__inner {
+    border-left: $colorOptionThirdMidtone solid 5px;
   }
   .preview__card__sm__list__icon {
-    color: green;
+    border: 2px solid $colorOptionThirdLight;
   }
   .preview__card__sm__list__icon__link {
-    color: green;
+    color: $colorOptionThirdDark;
   }
+}
+
+// Fourth palette
+.nm-op4 {
+  color: purple;
+}
+.bd-op4 {
+  border-left: rgb(243, 106, 52) solid 5px;
+}
+.cr-op4 {
+  border: 2px solid rgb(243, 106, 52);
+}
+.ico-op4 {
+  color: purple;
 }
