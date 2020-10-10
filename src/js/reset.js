@@ -11,6 +11,8 @@
 //crear variables con los elementos del listener y los que queremos cambiar en la tarjeta
 const reset = document.querySelector ('.js-reset');
 const job = document.querySelector ('.js-job');
+const introMail = document.querySelector('.js-mail');
+const prevMail = document.querySelector('.js-preview-mail');
 
 // //crear un objeto y sus propiedades
 const resetButton1 = {};
@@ -38,7 +40,9 @@ function colorReset (){
 //   return job.innerHTML = resetButton1.job;
 // }
 
-
+function putMail(){
+  prevMail.value = 'www.google.es';
+}
 // //evento sobre el botón.
 // reset.addEventListener ('click',changeName);
 reset.addEventListener ('click',colorReset);
