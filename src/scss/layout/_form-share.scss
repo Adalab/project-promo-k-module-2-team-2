@@ -12,8 +12,8 @@
     // interactive show/hide
     display: none;
 
-    &:active {
-      background-color: $colorTertiaryMidtoneLight;
+    &:hover {
+      background-color: $colorSecondaryMidtone;
     }
     & .fa-address-card {
       margin-right: 9px;
