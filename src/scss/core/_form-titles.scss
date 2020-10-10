@@ -15,6 +15,10 @@
     width: 16px;
     height: 18px;
     font-size: 18px;
+
+    &:hover {
+      color: $colorTertiaryDarkLight;
+    }
   }
   &__title {
     text-transform: uppercase;
