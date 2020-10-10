@@ -2,10 +2,10 @@
 'use strict';
 
 //el value de input en el elemento de nombre
-const inputName = document.querySelector('.js-input-name');
-const name = document.querySelector ('.js-name');
+// const inputName = document.querySelector('.js-input-name');
+// const name = document.querySelector ('.js-name');
 // const inputJob = document.querySelector ('.js-input-job');
-name.innerHTML = inputName.value;
+// name.innerHTML = inputName.value;
 
 
 //crear variables con los elementos del listener y los que queremos cambiar en la tarjeta
@@ -18,14 +18,12 @@ resetButton1.name = 'Nombre Apellido';
 resetButton1.job = 'Front-end developer';
 
 //funcion para que aparezca el value en el name (h2)
-function changeInput (){
-  return name.innerHTML = inputName.value;
-}
+
 
 // //funcion a cada propiedad
 const paletteReset = document.querySelector('.js-palette');
 function changeName (){
-  return name.innerHTML =  resetButton1.name; 
+  return name.innerHTML =  resetButton1.name;
 }
 
 
@@ -42,6 +40,6 @@ function colorReset (){
 
 
 // //evento sobre el botón.
-reset.addEventListener ('click',changeName);
+// reset.addEventListener ('click',changeName);
 reset.addEventListener ('click',colorReset);
 // reset.addEventListener ('click',changeJob);
