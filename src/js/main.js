@@ -55,7 +55,7 @@ function handleButtonSubmit(event) {
 
   if (buttonSubmit.classList.contains("change-color")) {
     const shareMessageBox = document.querySelector(".form__share--message");
-    shareMessageBox.classList.add("visible");
+    shareMessageBox.classList.add("js-show-form__share--message");
   }
 
   event.preventDefault();
