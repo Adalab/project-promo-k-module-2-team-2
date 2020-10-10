@@ -1,14 +1,16 @@
 "use strict";
 
+// drop-down menu
+
 const buttonArrowDesign = document.querySelector(
   ".js-form__box__button--design"
 );
 const buttonArrowFill = document.querySelector(".js-form__box__button--fill");
 const buttonArrowShare = document.querySelector(".js-form__box__button--share");
 
-const formBoxDesign = document.querySelector(".js-form__color");
+const formBoxDesign = document.querySelector(".form__color--container");
 const formBoxFill = document.querySelector(".form__data");
-const formBoxShare = document.querySelector(".form__share--button");
+const formBoxShare = document.querySelector(".form__share--container");
 
 function handleButtonArrowClick(event) {
   const openedButton = event.currentTarget;
@@ -43,13 +45,20 @@ buttonArrowDesign.addEventListener("click", handleButtonArrowClick);
 buttonArrowFill.addEventListener("click", handleButtonArrowClick);
 buttonArrowShare.addEventListener("click", handleButtonArrowClick);
 
-const buttonSubmit = document.querySelector(".form__share--button");
+// share box
+
+const buttonSubmit = document.querySelector(".js-form__share--button");
 
 function handleButtonSubmit(event) {
   buttonSubmit.classList.add("change-color");
   console.log("change color");
 
+  if (buttonSubmit.classList.contains("change-color")) {
+    const shareMessageBox = document.querySelector(".form__share--message");
+    shareMessageBox.classList.add("visible");
+  }
+
   event.preventDefault();
 }
 
-buttonSubmit.addEventListener("click", handleButtonSubmit());
+buttonSubmit.addEventListener("click", handleButtonSubmit);

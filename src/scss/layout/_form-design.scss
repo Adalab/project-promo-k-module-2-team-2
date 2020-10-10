@@ -7,8 +7,10 @@
     display: flex;
     justify-content: space-between;
 
-    // interactive show/hide
-    display: none;
+    &--container {
+      // interactive show/hide
+      display: none;
+    }
 
     &__box {
       display: flex;

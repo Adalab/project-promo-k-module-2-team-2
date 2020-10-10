@@ -14,51 +14,54 @@
         <i class="fas fa-angle-down down"></i>
       </button>
     </div>
-    <div class="form__color js-form__color m-top">
-      <label for="color1" class="form__label">Colores</label>
-      <div class="form__color__box">
-        <input
-          type="radio"
-          name="color"
-          id="color1"
-          class="form__color__input"
-        />
-        <div class="form__color__option">
-          <div class="form__color__first color-box"></div>
-          <div class="form__color__second color-box"></div>
-          <div class="form__color__third color-box"></div>
+
+    <div class="form__color--container">
+      <div class="form__color m-top">
+        <label for="color1" class="form__label">Colores</label>
+        <div class="form__color__box">
+          <input
+            type="radio"
+            name="color"
+            id="color1"
+            class="form__color__input"
+          />
+          <div class="form__color__option">
+            <div class="form__color__first color-box"></div>
+            <div class="form__color__second color-box"></div>
+            <div class="form__color__third color-box"></div>
+          </div>
         </div>
       </div>
-    </div>
-    <div class="form__color js-form__color">
-      <label for="color1" class="form__label"></label>
-      <div class="form__color__box">
-        <input
-          type="radio"
-          name="color"
-          id="color1"
-          class="form__color__input"
-        />
-        <div class="form__color__option">
-          <div class="form__color__fourth color-box"></div>
-          <div class="form__color__fifth color-box"></div>
-          <div class="form__color__sixth color-box"></div>
+      <div class="form__color">
+        <label for="color1" class="form__label"></label>
+        <div class="form__color__box">
+          <input
+            type="radio"
+            name="color"
+            id="color1"
+            class="form__color__input"
+          />
+          <div class="form__color__option">
+            <div class="form__color__fourth color-box"></div>
+            <div class="form__color__fifth color-box"></div>
+            <div class="form__color__sixth color-box"></div>
+          </div>
         </div>
       </div>
-    </div>
-    <div class="form__color js-form__colo">
-      <label for="color1" class="form__label"></label>
-      <div class="form__color__box">
-        <input
-          type="radio"
-          name="color"
-          id="color1"
-          class="form__color__input"
-        />
-        <div class="form__color__option">
-          <div class="form__color__seventh color-box"></div>
-          <div class="form__color__eighth color-box"></div>
-          <div class="form__color__nineth color-box"></div>
+      <div class="form__color">
+        <label for="color1" class="form__label"></label>
+        <div class="form__color__box">
+          <input
+            type="radio"
+            name="color"
+            id="color1"
+            class="form__color__input"
+          />
+          <div class="form__color__option">
+            <div class="form__color__seventh color-box"></div>
+            <div class="form__color__eighth color-box"></div>
+            <div class="form__color__nineth color-box"></div>
+          </div>
         </div>
       </div>
     </div>
@@ -169,27 +172,29 @@
         <i class="fas fa-angle-down down"></i>
       </button>
     </div>
-    <button
-      type="submit"
-      class="form__share--button txt-lg txt-wh txt-up txt-fsec"
-      title="Crear tarjeta"
-    >
-      <i class="far fa-address-card"></i>Crear tarjeta
-    </button>
-    <div class="form__share--message">
-      <h3 class="form__box__title h3 txt-lg">La tarjeta ha sido creada:</h3>
-      <a
-        class="card-link txt-bright txt-xs"
-        href="#"
-        title="Link a la nueva tarjeta"
-        >Link a la nueva tarjeta</a
-      >
+    <div class="form__share--container">
       <button
-        class="share-twitter txt-wh txt-fsec txt-sm"
-        title="Compartir en twitter"
+        type="submit"
+        class="form__share--button js-form__share--button txt-lg txt-wh txt-up txt-fsec"
+        title="Crear tarjeta"
       >
-        <i class="fab fa-twitter"></i>Compartir en twitter
+        <i class="far fa-address-card"></i>Crear tarjeta
       </button>
+      <div class="form__share--message js-form__share--message">
+        <h3 class="form__box__title h3 txt-lg">La tarjeta ha sido creada:</h3>
+        <a
+          class="card-link txt-bright txt-xs"
+          href="#"
+          title="Link a la nueva tarjeta"
+          >Link a la nueva tarjeta</a
+        >
+        <button
+          class="share-twitter txt-wh txt-fsec txt-sm"
+          title="Compartir en twitter"
+        >
+          <i class="fab fa-twitter"></i>Compartir en twitter
+        </button>
+      </div>
     </div>
   </fieldset>
 </form>
