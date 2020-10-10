@@ -1,32 +1,60 @@
 'use strict';
-
+//Name//
 const introName = document.querySelector('.js-intro-name');
 const prevName = document.querySelector('.js-preview-name');
-const introJob = document.querySelector('.js-intro-job');
-const prevJob = document.querySelector('.js-preview-job');
-const introPhone = document.querySelector('.js-phone');
-const prevPhone = document.querySelector('.js-preview-phone');
-const introMail = document.querySelector('.js-mail');
-const prevMail = document.querySelector('.js-preview-mail');
 
 function putName(){
   prevName.innerHTML = introName.value;
 }
 
+introName.addEventListener('keyup',putName);
+//Job//
+const introJob = document.querySelector('.js-intro-job');
+const prevJob = document.querySelector('.js-preview-job');
+
 function putJob(){
   prevJob.innerHTML = introJob.value;
 }
 
-function putPhone(){
-  prevPhone.innerHTML = introPhone.href;
-}
-
-function putMail(){
-  prevMail.innerHTML = introMail.href;
-}
-
-introName.addEventListener('keyup',putName);
 introJob.addEventListener('keyup',putJob);
+
+//Phone//
+const introPhone = document.querySelector('.js-intro-phone');
+const prevPhone = document.querySelector('.js-preview-phone');
+
+function putPhone(){
+  prevPhone.href = introPhone.value;
+}
+
 introPhone.addEventListener('keyup',putPhone);
-introMail.addEventListener('keyup',putMail);
+
+//Mail//
+const intMail = document.querySelector('.js-intro-mail');
+const preMail = document.querySelector('.js-preview-mail');
+
+function puMail(){
+  preMail.href = intMail.value;
+}
+
+intMail.addEventListener('keyup',puMail);
+
+//Linkedin//
+const introLinkedin = document.querySelector('.js-intro-linkedin');
+const prevLinkedin = document.querySelector('.js-preview-linkedin');
+
+function putLinkedin(){
+  prevLinkedin.href = introLinkedin.value;
+}
+
+introLinkedin.addEventListener('keyup',putLinkedin);
+
+//Github//
+const introGithub = document.querySelector('.js-intro-github');
+const prevGithub =  document.querySelector('.js-preview-github');
+
+function putGithub(){
+  prevGithub.href = introGithub.value;
+}
+
+introGithub.addEventListener('keyup',putGithub);
 
