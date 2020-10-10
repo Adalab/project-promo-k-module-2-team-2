@@ -1,0 +1,84 @@
+// Default palette
+
+.palette-default {
+  .preview__card__title__name {
+    color: $colorSecondaryDark;
+  }
+  .preview__card__title__inner {
+    border-color: $colorSecondaryMidtone;
+  }
+  .preview__card__sm__list__icon {
+    border-color: $colorSecondaryLight;
+  }
+  .preview__card__sm__list__icon__link {
+    color: $colorSecondaryDark;
+  }
+}
+
+// First palette
+
+.palette1 {
+  .preview__card__title__name {
+    color: $colorSecondaryDark;
+  }
+  .preview__card__title__inner {
+    border-color: $colorSecondaryMidtone;
+  }
+  .preview__card__sm__list__icon {
+    border-color: $colorSecondaryLight;
+  }
+  .preview__card__sm__list__icon__link {
+    color: $colorSecondaryDark;
+  }
+}
+
+// Second Palette
+
+.palette2 {
+  .preview__card__title__name {
+    color: $colorOptionSecondDark;
+  }
+  .preview__card__title__inner {
+    border-color: $colorOptionSecondMidtone;
+  }
+  .preview__card__sm__list__icon {
+    border-color: $colorOptionSecondLight;
+  }
+  .preview__card__sm__list__icon__link {
+    color: $colorOptionSecondDark;
+  }
+}
+
+// Third palette
+
+.palette3 {
+  .preview__card__title__name {
+    color: $colorOptionThirdDark;
+  }
+  .preview__card__title__inner {
+    border-color: $colorOptionThirdMidtone;
+  }
+  .preview__card__sm__list__icon {
+    border-color: $colorOptionThirdLight;
+  }
+  .preview__card__sm__list__icon__link {
+    color: $colorOptionThirdDark;
+  }
+}
+
+// Fourth palette
+
+.palette4 {
+  .preview__card__title__name {
+    color: purple;
+  }
+  .preview__card__title__inner {
+    border-color: rgb(243, 106, 52);
+  }
+  .preview__card__sm__list__icon {
+    border-color: rgb(243, 106, 52);
+  }
+  .preview__card__sm__list__icon__link {
+    color: purple;
+  }
+}
