@@ -16,7 +16,7 @@ const prevJob = document.querySelector('.js-preview-job');
 
 function putJob(){
   prevJob.innerHTML = introJob.value;
-  if (introJob.value.length>introJob.maxLength) introJob.value = introJob.value.slice (0, introJob.maxLength);
+  // if (introJob.value.length>introJob.maxLength) introJob.value = introJob.value.slice (0, introJob.maxLength);
 }
 
 introJob.addEventListener('keyup',putJob);
