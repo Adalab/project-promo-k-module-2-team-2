@@ -19,11 +19,13 @@ function changeName (){
   return name.innerHTML =  resetButton1.name;
 }
 
-// function changeJob (){
-//   return job.innerHTML = resetButton1.job;
-// }
+function changeJob (){
+  return job.innerHTML = resetButton1.job;
+}
 
 
+
+// introJob.addEventListener('keyup', putJob);
 // //evento sobre el botón.
 reset.addEventListener ('click',changeName);
-// reset.addEventListener ('click',changeJob);
+reset.addEventListener ('click',changeJob);
