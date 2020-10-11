@@ -44,7 +44,7 @@
     </div>
   </fieldset>
 
-  <fieldset class="form__fill column txt-dark bold">
+  <fieldset class="form__fill column txt-dark bold ">
     <div class="form__box">
       <div class="form__box__item">
         <i class="far fa-keyboard icon" aria-hidden="true"></i>
@@ -60,16 +60,18 @@
     <div class="form__data">
       <div class="form__data__name m-top" aria-label="Nombre completo">
         <label class="form__data__label" for="name">Nombre completo</label>
-        <input class="form__data__input js-input-name" type="text" name="name" id="name" value="Hola" placeholder="Ej: Sally Jill" />
+        <input required class="form__data__input js-input-name js-intro-name" type="text" maxlength="20"  value="" name="name" id="name" placeholder="Ej: Sally Jill" />
       </div>
       <div class="form__data__job" aria-label="Puesto">
         <label class="form__data__label js-input-job" for="job">Puesto</label>
         <input
-          class="form__data__input"
+          required
+          class="form__data__input js-intro-job"
           type="text"
           name="job"
           id="job"
-          value="ADIOS"
+          maxlenght = "18"
+          value=""
           placeholder="Ej: Front-end unicorn"
         />
       </div>
@@ -90,15 +92,15 @@
       </div>
       <div class="form__data__name" aria-label="Contacto">
         <label class="form__data__label" for="mail">Email</label>
-        <input class="form__data__input" type="email" name="mail" id="mail" placeholder="Ej: sally.hill@gmail.com" />
+        <input required class="form__data__input js-mail js-intro-mail" type="email" name="mail" id="mail" placeholder="Ej: sally.hill@gmail.com" />
 
         <label class="form__data__label" for="phone">Teléfono</label>
-        <input class="form__data__input" type="tel" name="phone" id="phone" placeholder="Ej: 555-55-55-55" />
-        <label class="form__data__label" for="linkedin">Linkedin</label>
-        <input class="form__data__input" type="url" name="linkedin" id="linkedin"
+        <input class="form__data__input js-phone js-intro-phone" type="tel" name="phone" id="phone" placeholder="Ej: 555-55-55-55" />
+        <label class="form__data__label " for="linkedin">Linkedin</label>
+        <input class="form__data__input js-linkedin js-intro-linkedin" type="url" name="linkedin" id="linkedin"
           placeholder="Ej: linkedin.com/in/sally-hill" />
         <label class="form__data__label" for="github">Github</label>
-        <input class="form__data__input" type="text" name="github" id="github" placeholder="Ej: @sally-hill" />
+        <input class="form__data__input js-github js-intro-github" type="text" name="github" id="github" placeholder="Ej: @sally-hill" />
       </div>
     </div>
   </fieldset>
