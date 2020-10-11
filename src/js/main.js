@@ -18,10 +18,11 @@ function handleButtonArrowClick(event) {
   console.log("rotate");
 
   if (buttonArrowDesign.classList.contains("btn-rotate") === true) {
-    formBoxDesign.classList.add("visible");
-    console.log("visible");
+    formBoxDesign.style.height = "160px";
+    formBoxDesign.style.opacity = "1";
   } else if (buttonArrowDesign.classList.contains("btn-rotate") === false) {
-    formBoxDesign.classList.remove("visible");
+    formBoxDesign.style.height = "0";
+    formBoxDesign.style.opacity = "0";
   }
 
   if (buttonArrowFill.classList.contains("btn-rotate") === true) {
