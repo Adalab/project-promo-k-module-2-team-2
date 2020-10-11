@@ -21,13 +21,6 @@ function changeName (){
 }
 
 
-function colorReset (){
-  paletteReset.classList.add('default-palette');
-  paletteReset.classList.remove ('palette1');
-  paletteReset.classList.remove ('palette2');
-  paletteReset.classList.remove ('palette3');
-}
-
 function changeJob (){
   return job.innerHTML = resetButton1.job;
 }
@@ -35,7 +28,20 @@ function changeJob (){
 function putMail(){
   prevMail.value = 'www.google.es';
 }
-// //evento sobre el botón.
+
+function colorReset (){
+  const colorOption1 = document.querySelector('.js-color1');
+  paletteReset.classList.add('default-palette');
+  paletteReset.classList.remove ('palette1');
+  paletteReset.classList.remove ('palette2');
+  paletteReset.classList.remove ('palette3');
+  if (colorOption1.checked === false){
+    colorOption1.checked = true;
+  }
+}
+
+//evento sobre el botón.
+reset.addEventListener ('click',colorReset);
 reset.addEventListener ('click',changeName);
 reset.addEventListener ('click',colorReset);
 reset.addEventListener ('click',changeJob);
