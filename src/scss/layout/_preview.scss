@@ -1,19 +1,24 @@
 .preview {
   height: 457px;
+  border-radius: 6px;
   @media all and (min-width: 768px) {
+    height: 812px;
+  }
+  &__box {
     height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
   }
   &__btn {
     width: 75px;
     height: 30px;
+    transform: translateX(-83px);
     background-color: $colorTertiaryDarkLight;
     border: solid 1px $colorTertiaryLight;
     border-radius: 15px;
-    margin-left: 45px;
-    margin-top: 30px;
-    @media all and (min-width: 768px) {
-      margin-top: 173px;
-    }
+    margin-bottom: 20px;
 
     &__reset {
       padding-left: 8px;
@@ -24,11 +29,6 @@
     background-color: $colorTertiaryLight;
     width: 240px;
     height: 329px;
-    margin: 20px 45px;
-    margin-bottom: 40px;
-    @media all and (min-width: 768px) {
-      margin-bottom: 267px;
-    }
 
     &__title {
       display: flex;
