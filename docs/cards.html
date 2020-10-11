@@ -3,7 +3,12 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Adalab Web Starter Kit</title>
+    <title>Catrina's awesome profile-cards</title>
+    <link
+            rel="shortcut icon"
+            href="./assets/images/catrina-la-calavera-.png"
+            type="image/x-icon"
+        />
     <script
       src="https://kit.fontawesome.com/476ba4bf26.js"
       crossorigin="anonymous"
@@ -13,15 +18,264 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./assets/css/main.css" />
-    <link rel="icon" href="./assets/images/favicon.png" />
   </head>
 
   <body>
-    <header></header>
+    <header class="header" role="banner">
 
-    <footer class="footer">
-      <small class="copy"> Awesome profile cards @2018</small>
-      <img src="./images/logo-adalab.png" />
+        <img class="header__logo" src="./assets/images/logo-awesome-profile-cards.svg" alt="Awesome profile cards Logo" title= "Awesome profile cards Logo">
+
+
+
+    </header>
+
+    <div class="grid">
+      <section class="preview">
+          <div class="preview__box">
+              <button class="preview__btn txt-xs txt-up txt-fsec js-reset" type="reset" title="Reset"><i class="far fa-trash-alt"></i><span
+                      class="preview__btn__reset">Reset</span></button>
+              <article class="preview__card palette1 js-palette">
+                  <div class="preview__card__title">
+                      <div class="preview__card__title__inner txt-fter">
+                          <h2 class="preview__card__title__name txt-lg js-name js-preview-name">Nombre Apellido</h2>
+                          <h3 class="preview__card__title__job txt-md txt-light js-job js-preview-job">Front-end developer</h3>
+                      </div>
+                  </div>
+                  <div class="preview__card__box js__profile-image ">
+                      <img class="preview__card__box__img"
+                          src="https://quizlet.com/cdn-cgi/image/f=auto,fit=cover,h=200,onerror=redirect,w=240/https://o.quizlet.com/-eqTyjYDzs5teZgDoQi9aQ.jpg"
+                          alt="Imagen" title="Imagen"></a>
+                  </div>
+                  <nav class="preview__card__sm" role="navigation">
+                      <ul class="preview__card__sm__list">
+                          <li class="preview__card__sm__list__icon"><a class="preview__card__sm__list__icon__link mobile js-preview-phone" href=""
+                                  alt="Telephone" title="Telephone"><i class="fas fa-mobile-alt"></i></a></li>
+                          <li class="preview__card__sm__list__icon"><a class="preview__card__sm__list__icon__link js-preview-mail" href=""
+                                  alt="Email" target="_blank" title="Email"><i class="far fa-envelope"></i></a></li>
+
+                          <li class="preview__card__sm__list__icon"><a class="js-preview-linkedin preview__card__sm__list__icon__link linkedin"
+                                  href="" alt="Linkedin" title="Linkedin" target="_blank"><i class="fab fa-linkedin-in"></i></a></li>
+
+                          <li class="preview__card__sm__list__icon"><a class=" js-preview-github preview__card__sm__list__icon__link" href=""
+                                  alt="Github" title="Github" target="_blank"><i class="fab fa-github-alt"></i></a></li>
+                      </ul>
+                  </nav>
+              </article>
+          </div>
+      </section>
+      <form
+        action="/signup"
+        method="post"
+        class="form txt-fsec txt-sm txt-light"
+        role="form"
+      >
+        <fieldset class="form__design column">
+          <div class="form__box">
+            <div class="form__box__item">
+              <i class="far fa-object-ungroup icon" aria-hidden="true"></i>
+              <h2 class="form__box__title txt-lg" aria-label="Diseña">Diseña</h2>
+            </div>
+            <button class="form__box__button js-form__box__button--design">
+              <i class="fas fa-angle-down down"></i>
+            </button>
+          </div>
+          <div class="form__color--container">
+            <div class="form__color m-top">
+              <label for="color1" class="form__label">Colores</label>
+              <div class="form__color__box">
+                <input
+                  type="radio"
+                  name="color"
+                  id="color1"
+                  class="form__color__input js-color1"
+                />
+                <div class="form__color__option js-color1">
+                  <div class="form__color__first color-box"></div>
+                  <div class="form__color__second color-box"></div>
+                  <div class="form__color__third color-box"></div>
+                </div>
+              </div>
+            </div>
+            <div class="form__color">
+              <label for="color1" class="form__label"></label>
+              <div class="form__color__box">
+                <input
+                  type="radio"
+                  name="color"
+                  id="color1"
+                  class="form__color__input js-color2"
+                />
+                <div class="form__color__option">
+                  <div class="form__color__fourth color-box"></div>
+                  <div class="form__color__fifth color-box"></div>
+                  <div class="form__color__sixth color-box"></div>
+                </div>
+              </div>
+            </div>
+            <div class="form__color">
+              <label for="color1" class="form__label"></label>
+              <div class="form__color__box">
+                <input
+                  type="radio"
+                  name="color"
+                  id="color1"
+                  class="form__color__input js-color3"
+                />
+                <div class="form__color__option">
+                  <div class="form__color__seventh color-box"></div>
+                  <div class="form__color__eighth color-box"></div>
+                  <div class="form__color__nineth color-box"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </fieldset>
+
+        <fieldset class="form__fill column txt-dark bold">
+          <div class="form__box">
+            <div class="form__box__item">
+              <i class="far fa-keyboard icon" aria-hidden="true"></i>
+              <h2 class="form__box__title txt-lg txt-light" aria-label="Rellena">
+                Rellena
+              </h2>
+            </div>
+            <button class="form__box__button js-form__box__button--fill">
+              <i class="fas fa-angle-down down"></i>
+            </button>
+          </div>
+
+          <div class="form__data">
+            <div class="form__data__name m-top" aria-label="Nombre completo">
+              <label class="form__data__label" for="name">Nombre completo</label>
+              <input
+                required
+                class="form__data__input js-input-name js-intro-name"
+                type="text"
+                maxlength="20"
+                value=""
+                name="name"
+                id="name"
+                placeholder="Ej: Sally Jill"
+              />
+            </div>
+            <div class="form__data__job" aria-label="Puesto">
+              <label class="form__data__label js-input-job" for="job">Puesto</label>
+              <input
+                required
+                class="form__data__input js-intro-job"
+                type="text"
+                maxlenght="18"
+                value=""
+                name="job"
+                id="job"
+                placeholder="Ej: Front-end unicorn"
+              />
+            </div>
+
+            <div class="form__data__name" aria-label="Imagen de perfil">
+              <label class="form__data__label" for="image">Imagen de perfil</label>
+              <input
+                class="form__data__image__input js__profile-upload-btn"
+                type="file"
+                name="image"
+                id="image"
+              />
+              <div class="form__data__image__buttonsbox">
+                <div class="form__data__btn">
+                  <button
+                    type="button"
+                    class="form__data__image__btn js__profile-trigger txt-sm txt-wh txt-fsec"
+                    aria-label="Añadir imagen"
+                  >
+                    Añadir imagen
+                  </button>
+                </div>
+
+                <div class="form__data__image__preview js__profile-preview"></div>
+              </div>
+            </div>
+            <div class="form__data__name" aria-label="Contacto">
+              <label class="form__data__label" for="mail">Email</label>
+              <input
+                required
+                class="form__data__input js-mail js-intro-mail"
+                type="email"
+                name="mail"
+                id="mail"
+                placeholder="Ej: sally.hill@gmail.com"
+              />
+
+              <label class="form__data__label" for="phone">Teléfono</label>
+              <input
+                class="form__data__input js-phone js-intro-phone"
+                type="tel"
+                name="phone"
+                id="phone"
+                placeholder="Ej: 555-55-55-55"
+              />
+              <label class="form__data__label" for="linkedin">Linkedin</label>
+              <input
+                class="form__data__input js-linkedin js-intro-linkedin"
+                type="url"
+                name="linkedin"
+                id="linkedin"
+                placeholder="Ej: linkedin.com/in/sally-hill"
+              />
+              <label class="form__data__label" for="github">Github</label>
+              <input
+                class="form__data__input js-github js-intro-github"
+                type="text"
+                name="github"
+                id="github"
+                placeholder="Ej: @sally-hill"
+              />
+            </div>
+          </div>
+        </fieldset>
+
+        <fieldset class="form__share column">
+          <div class="form__box">
+            <div class="form__box__item">
+              <i class="fas fa-share-alt icon" aria-hidden="true"></i>
+              <h2 class="form__box__title txt-lg" aria-label="Comparte">Comparte</h2>
+            </div>
+            <button class="form__box__button js-form__box__button--share">
+              <i class="fas fa-angle-down down"></i>
+            </button>
+          </div>
+          <div class="form__share--container">
+            <button
+              type="submit"
+              class="form__share--button js-reset js-form__share--button txt-lg txt-wh txt-up txt-fsec"
+              title="Crear tarjeta"
+            >
+              <i class="far fa-address-card"></i>Crear tarjeta
+            </button>
+            <div class="form__share--message js-form__share--message">
+              <h3 class="form__box__title h3 txt-lg">La tarjeta ha sido creada:</h3>
+              <a
+                class="card-link txt-bright txt-xs"
+                href="#"
+                title="Link a la nueva tarjeta"
+                >Link a la nueva tarjeta</a
+              >
+              <button
+                class="share-twitter txt-wh txt-fsec txt-sm"
+                title="Compartir en twitter"
+              >
+                <i class="fab fa-twitter"></i>Compartir en twitter
+              </button>
+            </div>
+          </div>
+        </fieldset>
+      </form>
+
+    </div>
+    <footer class="footer" role="contentinfo">
+      <small class="copy txt-fsec txt-lighter txt-sm">
+        Catrina's awesome profile-cards @2020</small
+      >
+      <img class="logo" src="./assets/images/logo-adalab.png" title="Logotipo" />
     </footer>
 
     <script src="./assets/js/main.js"></script>

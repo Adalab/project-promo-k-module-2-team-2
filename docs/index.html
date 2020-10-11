@@ -3,7 +3,12 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Adalab Web Starter Kit</title>
+    <title>Catrina's awesome profile-cards</title>
+    <link
+            rel="shortcut icon"
+            href="./assets/images/catrina-la-calavera-.png"
+            type="image/x-icon"
+        />
     <script
       src="https://kit.fontawesome.com/476ba4bf26.js"
       crossorigin="anonymous"
@@ -13,15 +18,65 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./assets/css/main.css" />
-    <link rel="icon" href="./assets/images/favicon.png" />
   </head>
 
   <body>
-    <main></main>
+    <!-- <header class="header" role="banner">
 
-    <footer class="footer">
-      <small class="copy"> Awesome profile cards @2018</small>
-      <img src="./images/logo-adalab.png" />
+     <img class="header__logo" src="./assets/images/logo-awesome-profile-cards.svg" alt="Awesome profile cards Logo" title= "Awesome profile cards Logo">
+
+
+
+ </header>
+ -->
+    <main class="landing txt-fsec" role="main">
+      <img
+        class="landing__img"
+        src="./assets/images/logo-awesome-profile-cards.svg"
+        alt="Page Logo"
+      />
+      <section class="landing__intro">
+        <h1
+          class="landing__intro__title txt-bright txt-xl txt-fpri"
+          aria-label="Crea tu tarjeta"
+        >
+          Crea tu tarjeta de visita
+        </h1>
+        <p class="landing__intro__text txt-dark">
+          Crea mejores contactos profesionales de forma fácil y cómoda
+        </p>
+      </section>
+      <section class="landing__icons txt-light">
+        <ul class="landing__icons__list">
+          <li class="landing__icons__item design">
+            <i class="far fa-object-ungroup icon"></i>
+            <p class="landing__icons__text">Diseña</p>
+          </li>
+          <li class="landing__icons__item fill">
+            <i class="far fa-keyboard icon"></i>
+            <p class="landing__icons__text">Rellena</p>
+          </li>
+          <li class="landing__icons__item share">
+            <i class="fas fa-share-alt icon"></i>
+            <p class="landing__icons__text">Comparte</p>
+          </li>
+        </ul>
+      </section>
+      <div class="landing__button">
+        <a
+          href="./cards.html"
+          class="landing__button__link txt-md txt-wh txt-up"
+          title="Make your card!"
+          >Comenzar</a
+        >
+      </div>
+    </main>
+
+    <footer class="footer" role="contentinfo">
+      <small class="copy txt-fsec txt-lighter txt-sm">
+        Catrina's awesome profile-cards @2020</small
+      >
+      <img class="logo" src="./assets/images/logo-adalab.png" title="Logotipo" />
     </footer>
 
     <script src="./assets/js/main.js"></script>
