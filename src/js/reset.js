@@ -31,12 +31,15 @@ function putMail(){
 
 function colorReset (){
   const colorOption1 = document.querySelector('.js-color1');
-  paletteReset.classList.remove ('palette1');
-  paletteReset.classList.remove ('palette2');
-  paletteReset.classList.remove ('palette3');
+  if(paletteReset.classList.contains("palette1") === false){
+    paletteReset.classList.add("palette1");
+    paletteReset.classList.remove ('palette2');
+   paletteReset.classList.remove ('palette3');
+  }
   if (colorOption1.checked === false){
     colorOption1.checked = true;
   }
+  console.log(colorOption1);
 }
 
 //evento sobre el botón.
