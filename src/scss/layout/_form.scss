@@ -19,9 +19,12 @@
     &__image {
       &__input {
         display: none;
+        
       }
       &__buttonsbox {
         display: flex;
+
+        
 
         & .hiddenField {
           display: none;
@@ -35,6 +38,7 @@
         border-radius: 3px;
         margin-top: 7px;
         margin-bottom: 20px;
+        
       }
       &__preview {
         background-position: center;
@@ -62,3 +66,5 @@
     margin-right: 30px;
   }
 }
+
+

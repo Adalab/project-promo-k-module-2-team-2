@@ -13,7 +13,6 @@ const resetButton1 = {};
 resetButton1.name = 'Nombre Apellido';
 resetButton1.job = 'Front-end developer';
 
-
 // //funcion a cada propiedad
 const paletteReset = document.querySelector('.js-palette');
 function changeName (){
