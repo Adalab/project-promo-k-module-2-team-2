@@ -3,7 +3,10 @@
 
   &--container {
     // interactive show/hide
-    display: none;
+    height: 0;
+    opacity: 0;
+    overflow: hidden;
+    transition: ease 0.5s;
   }
 
   &--button {

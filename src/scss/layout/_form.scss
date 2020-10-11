@@ -5,7 +5,10 @@
     flex-direction: column;
 
     // interactive show/hide
-    display: none;
+    height: 0;
+    opacity: 0;
+    overflow: hidden;
+    transition: ease 1s;
 
     &__input {
       display: flex;
@@ -19,12 +22,9 @@
     &__image {
       &__input {
         display: none;
-        
       }
       &__buttonsbox {
         display: flex;
-
-        
 
         & .hiddenField {
           display: none;
@@ -38,7 +38,6 @@
         border-radius: 3px;
         margin-top: 7px;
         margin-bottom: 20px;
-        
       }
       &__preview {
         background-position: center;
@@ -66,5 +65,3 @@
     margin-right: 30px;
   }
 }
-
-

@@ -26,17 +26,19 @@ function handleButtonArrowClick(event) {
   }
 
   if (buttonArrowFill.classList.contains("btn-rotate") === true) {
-    formBoxFill.classList.add("visible");
-    console.log("visible");
+    formBoxFill.style.height = "586px";
+    formBoxFill.style.opacity = "1";
   } else if (buttonArrowFill.classList.contains("btn-rotate") === false) {
-    formBoxFill.classList.remove("visible");
+    formBoxFill.style.height = "0";
+    formBoxFill.style.opacity = "0";
   }
 
   if (buttonArrowShare.classList.contains("btn-rotate") === true) {
-    formBoxShare.classList.add("visible");
-    console.log("visible");
+    formBoxShare.style.height = "110px";
+    formBoxShare.style.opacity = "1";
   } else if (buttonArrowShare.classList.contains("btn-rotate") === false) {
-    formBoxShare.classList.remove("visible");
+    formBoxShare.style.height = "0";
+    formBoxShare.style.opacity = "0";
   }
 
   event.preventDefault();
@@ -55,6 +57,7 @@ function handleButtonSubmit(event) {
   console.log("change color");
 
   if (buttonSubmit.classList.contains("change-color")) {
+    formBoxShare.style.height = "250px";
     const shareMessageBox = document.querySelector(".form__share--message");
     shareMessageBox.classList.add("js-show-form__share--message");
   }
