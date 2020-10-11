@@ -16,12 +16,16 @@ resetButton1.job = 'Front-end developer';
 // //funcion a cada propiedad
 const paletteReset = document.querySelector('.js-palette');
 function changeName (){
-  return name.innerHTML =  resetButton1.name;
-}
-
-
-function changeJob (){
-  return job.innerHTML = resetButton1.job;
+  name.innerHTML =  resetButton1.name;
+  introName.value = "";
+  profileImage.style.backgroundImage = "";
+  profilePreview.style.backgroundImage = "";
+  job.innerHTML = resetButton1.job;
+  introJob.value = "";
+  introPhone.value = "";
+  intMail.value = "";
+  introGithub.value = "";
+  introLinkedin.value = "";
 }
 
 function putMail(){
@@ -42,7 +46,5 @@ function colorReset (){
 }
 
 //evento sobre el botón.
-reset.addEventListener ('click',colorReset);
 reset.addEventListener ('click',changeName);
 reset.addEventListener ('click',colorReset);
-reset.addEventListener ('click',changeJob);
