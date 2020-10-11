@@ -31,7 +31,6 @@ function putMail(){
 
 function colorReset (){
   const colorOption1 = document.querySelector('.js-color1');
-  paletteReset.classList.add('default-palette');
   paletteReset.classList.remove ('palette1');
   paletteReset.classList.remove ('palette2');
   paletteReset.classList.remove ('palette3');
