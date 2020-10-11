@@ -1,50 +1,72 @@
-<form action="/signup" method="post" class="form txt-fsec txt-sm txt-light" role="form">
+<form
+  action="/signup"
+  method="post"
+  class="form txt-fsec txt-sm txt-light"
+  role="form"
+>
   <fieldset class="form__design column">
     <div class="form__box">
       <div class="form__box__item">
         <i class="far fa-object-ungroup icon" aria-hidden="true"></i>
         <h2 class="form__box__title txt-lg" aria-label="Diseña">Diseña</h2>
       </div>
-      <button class="form__box__button">
+      <button class="form__box__button js-form__box__button--design">
         <i class="fas fa-angle-down down"></i>
       </button>
     </div>
-    <div class="form__color m-top">
-      <label for="color1" class="form__label">Colores</label>
-      <div class="form__color__box">
-        <input type="radio" name="color" id="color1" class="form__color__input js-color1" />
-        <div class="form__color__option js-color1">
-          <div class="form__color__first color-box"></div>
-          <div class="form__color__second color-box"></div>
-          <div class="form__color__third color-box"></div>
+    <div class="form__color--container">
+      <div class="form__color m-top">
+        <label for="color1" class="form__label">Colores</label>
+        <div class="form__color__box">
+          <input
+            type="radio"
+            name="color"
+            id="color1"
+            class="form__color__input js-color1"
+          />
+          <div class="form__color__option js-color1">
+            <div class="form__color__first color-box"></div>
+            <div class="form__color__second color-box"></div>
+            <div class="form__color__third color-box"></div>
+          </div>
         </div>
       </div>
-    </div>
-    <div class="form__color">
-      <label for="color1" class="form__label"></label>
-      <div class="form__color__box">
-        <input type="radio" name="color" id="color1" class="form__color__input js-color2" />
-        <div class="form__color__option">
-          <div class="form__color__fourth color-box"></div>
-          <div class="form__color__fifth color-box"></div>
-          <div class="form__color__sixth color-box"></div>
+      <div class="form__color">
+        <label for="color1" class="form__label"></label>
+        <div class="form__color__box">
+          <input
+            type="radio"
+            name="color"
+            id="color1"
+            class="form__color__input js-color2"
+          />
+          <div class="form__color__option">
+            <div class="form__color__fourth color-box"></div>
+            <div class="form__color__fifth color-box"></div>
+            <div class="form__color__sixth color-box"></div>
+          </div>
         </div>
       </div>
-    </div>
-    <div class="form__color">
-      <label for="color1" class="form__label"></label>
-      <div class="form__color__box">
-        <input type="radio" name="color" id="color1" class="form__color__input js-color3" />
-        <div class="form__color__option">
-          <div class="form__color__seventh color-box"></div>
-          <div class="form__color__eighth color-box"></div>
-          <div class="form__color__nineth color-box"></div>
+      <div class="form__color">
+        <label for="color1" class="form__label"></label>
+        <div class="form__color__box">
+          <input
+            type="radio"
+            name="color"
+            id="color1"
+            class="form__color__input js-color3"
+          />
+          <div class="form__color__option">
+            <div class="form__color__seventh color-box"></div>
+            <div class="form__color__eighth color-box"></div>
+            <div class="form__color__nineth color-box"></div>
+          </div>
         </div>
       </div>
     </div>
   </fieldset>
 
-  <fieldset class="form__fill column txt-dark bold ">
+  <fieldset class="form__fill column txt-dark bold">
     <div class="form__box">
       <div class="form__box__item">
         <i class="far fa-keyboard icon" aria-hidden="true"></i>
@@ -52,7 +74,7 @@
           Rellena
         </h2>
       </div>
-      <button class="form__box__button">
+      <button class="form__box__button js-form__box__button--fill">
         <i class="fas fa-angle-down down"></i>
       </button>
     </div>
@@ -60,7 +82,16 @@
     <div class="form__data">
       <div class="form__data__name m-top" aria-label="Nombre completo">
         <label class="form__data__label" for="name">Nombre completo</label>
-        <input required class="form__data__input js-input-name js-intro-name" type="text" maxlength="20"  value="" name="name" id="name" placeholder="Ej: Sally Jill" />
+        <input
+          required
+          class="form__data__input js-input-name js-intro-name"
+          type="text"
+          maxlength="20"
+          value=""
+          name="name"
+          id="name"
+          placeholder="Ej: Sally Jill"
+        />
       </div>
       <div class="form__data__job" aria-label="Puesto">
         <label class="form__data__label js-input-job" for="job">Puesto</label>
@@ -70,7 +101,7 @@
           type="text"
           name="job"
           id="job"
-          maxlenght = "18"
+          maxlenght="18"
           value=""
           placeholder="Ej: Front-end unicorn"
         />
@@ -78,11 +109,19 @@
 
       <div class="form__data__name" aria-label="Imagen de perfil">
         <label class="form__data__label" for="image">Imagen de perfil</label>
-        <input class="form__data__image__input js__profile-upload-btn" type="file" name="image" id="image" />
+        <input
+          class="form__data__image__input js__profile-upload-btn"
+          type="file"
+          name="image"
+          id="image"
+        />
         <div class="form__data__image__buttonsbox">
           <div class="form__data__btn">
-            <button type="button" class="form__data__image__btn js__profile-trigger txt-sm txt-wh txt-fsec"
-              aria-label="Añadir imagen">
+            <button
+              type="button"
+              class="form__data__image__btn js__profile-trigger txt-sm txt-wh txt-fsec"
+              aria-label="Añadir imagen"
+            >
               Añadir imagen
             </button>
           </div>
@@ -92,15 +131,39 @@
       </div>
       <div class="form__data__name" aria-label="Contacto">
         <label class="form__data__label" for="mail">Email</label>
-        <input required class="form__data__input js-mail js-intro-mail" type="email" name="mail" id="mail" placeholder="Ej: sally.hill@gmail.com" />
+        <input
+          required
+          class="form__data__input js-mail js-intro-mail"
+          type="email"
+          name="mail"
+          id="mail"
+          placeholder="Ej: sally.hill@gmail.com"
+        />
 
         <label class="form__data__label" for="phone">Teléfono</label>
-        <input class="form__data__input js-phone js-intro-phone" type="tel" name="phone" id="phone" placeholder="Ej: 555-55-55-55" />
-        <label class="form__data__label " for="linkedin">Linkedin</label>
-        <input class="form__data__input js-linkedin js-intro-linkedin" type="url" name="linkedin" id="linkedin"
-          placeholder="Ej: linkedin.com/in/sally-hill" />
+        <input
+          class="form__data__input js-phone js-intro-phone"
+          type="tel"
+          name="phone"
+          id="phone"
+          placeholder="Ej: 555-55-55-55"
+        />
+        <label class="form__data__label" for="linkedin">Linkedin</label>
+        <input
+          class="form__data__input js-linkedin js-intro-linkedin"
+          type="url"
+          name="linkedin"
+          id="linkedin"
+          placeholder="Ej: linkedin.com/in/sally-hill"
+        />
         <label class="form__data__label" for="github">Github</label>
-        <input class="form__data__input js-github js-intro-github" type="text" name="github" id="github" placeholder="Ej: @sally-hill" />
+        <input
+          class="form__data__input js-github js-intro-github"
+          type="text"
+          name="github"
+          id="github"
+          placeholder="Ej: @sally-hill"
+        />
       </div>
     </div>
   </fieldset>
@@ -111,19 +174,33 @@
         <i class="fas fa-share-alt icon" aria-hidden="true"></i>
         <h2 class="form__box__title txt-lg" aria-label="Comparte">Comparte</h2>
       </div>
-      <button class="form__box__button">
+      <button class="form__box__button js-form__box__button--share">
         <i class="fas fa-angle-down down"></i>
       </button>
     </div>
-    <button type="submit" class="form__share--button txt-lg txt-wh txt-up js-reset" title="Crear tarjeta">
-      <i class="far fa-address-card"></i>Crear tarjeta
-    </button>
-    <div class="form__share--message">
-      <h3 class="form__box__title h3 txt-lg">La tarjeta ha sido creada:</h3>
-      <a class="card-link txt-bright txt-xs" href="#" title="Link a la nueva tarjeta">Link a la nueva tarjeta</a>
-      <button class="share-twitter txt-wh" title="Compartir en twitter">
-        <i class="fab fa-twitter"></i>Compartir en twitter
+    <div class="form__share--container">
+      <button
+        type="submit"
+        class="form__share--button js-reset js-form__share--button txt-lg txt-wh txt-up txt-fsec"
+        title="Crear tarjeta"
+      >
+        <i class="far fa-address-card"></i>Crear tarjeta
       </button>
+      <div class="form__share--message js-form__share--message">
+        <h3 class="form__box__title h3 txt-lg">La tarjeta ha sido creada:</h3>
+        <a
+          class="card-link txt-bright txt-xs"
+          href="#"
+          title="Link a la nueva tarjeta"
+          >Link a la nueva tarjeta</a
+        >
+        <button
+          class="share-twitter txt-wh txt-fsec txt-sm"
+          title="Compartir en twitter"
+        >
+          <i class="fab fa-twitter"></i>Compartir en twitter
+        </button>
+      </div>
     </div>
   </fieldset>
 </form>

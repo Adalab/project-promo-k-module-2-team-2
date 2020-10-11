@@ -6,6 +6,12 @@
   &__color {
     display: flex;
     justify-content: space-between;
+
+    &--container {
+      // interactive show/hide
+      display: none;
+    }
+
     &__box {
       display: flex;
       align-items: center;
