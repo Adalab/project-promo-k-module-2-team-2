@@ -6,6 +6,9 @@ const prevName = document.querySelector('.js-preview-name');
 
 function putName(){
   prevName.innerHTML = introName.value;
+  if (introName.value === ""){
+    prevName.innerHTML = "Nombre Apellido";
+  }
   if (introName.value.length>introName.maxLength) introName.value = introName.value.slice (0, introName.maxLength);
 }
 
@@ -16,6 +19,9 @@ const prevJob = document.querySelector('.js-preview-job');
 
 function putJob(){
   prevJob.innerHTML = introJob.value;
+  if (introJob.value === ""){
+    prevJob.innerHTML = "Front-end developer";
+  }
   // if (introJob.value.length>introJob.maxLength) introJob.value = introJob.value.slice (0, introJob.maxLength);
 }
 
