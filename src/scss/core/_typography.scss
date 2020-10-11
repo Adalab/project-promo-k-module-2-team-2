@@ -2,8 +2,11 @@
   padding: 3px 0px 7px 9px;
   font-size: 14px;
   font-family: $font__secondary;
+  border: $colorSecondaryMidtone solid 1px;
 }
-
+input:focus{
+  outline: $colorSecondaryDark solid 1.5px;
+}
 // Font Styles
 
 // Weight
