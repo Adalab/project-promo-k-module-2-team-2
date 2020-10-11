@@ -1,47 +1,28 @@
 .form__share {
   text-align: center;
+
+  &--container {
+    // interactive show/hide
+    display: none;
+  }
+
   &--button {
     width: 199px;
     height: 50px;
     background-color: $colorPrimary;
     border-radius: 12px;
     box-shadow: 0 1px 6px 0 rgba(0, 0, 0, 0.32);
-    margin: 30px 61px;
+    margin: 30px 0px;
 
-    &:active {
-      background-color: $colorTertiaryMidtoneLight;
+    &:hover {
+      background-color: $colorTertiaryDarkMidtone;
     }
     & .fa-address-card {
       margin-right: 9px;
     }
   }
+
   &--message {
-    width: 280px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    border-top: $colorTertiaryDarkMidtone solid 1px;
-    border-bottom: $colorTertiaryDarkMidtone solid 1px;
-    margin: 0 auto 30px auto;
-
-    & .h3 {
-      margin: 20px 0 10px 0;
-    }
-
-    & .share-twitter {
-      width: 181px;
-      height: 30px;
-      background-color: #00a0f5;
-      border-radius: 3px;
-      margin: 10px 0 30px 0;
-      box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.32);
-      & .fa-twitter {
-        margin-right: 9.5px;
-      }
-    }
+    display: none;
   }
-}
-
-.hidden {
-  display: none;
 }
