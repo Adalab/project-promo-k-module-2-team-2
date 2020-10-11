@@ -60,7 +60,7 @@
     <div class="form__data">
       <div class="form__data__name m-top" aria-label="Nombre completo">
         <label class="form__data__label" for="name">Nombre completo</label>
-        <input required class="form__data__input js-input-name js-intro-name" type="text" value="" name="name" id="name" placeholder="Ej: Sally Jill" />
+        <input required class="form__data__input js-input-name js-intro-name" type="text" maxlength="20"  value="" name="name" id="name" placeholder="Ej: Sally Jill" />
       </div>
       <div class="form__data__job" aria-label="Puesto">
         <label class="form__data__label js-input-job" for="job">Puesto</label>
@@ -70,6 +70,7 @@
           type="text"
           name="job"
           id="job"
+          maxlenght = "18"
           value=""
           placeholder="Ej: Front-end unicorn"
         />
@@ -94,7 +95,7 @@
         <input required class="form__data__input js-mail js-intro-mail" type="email" name="mail" id="mail" placeholder="Ej: sally.hill@gmail.com" />
 
         <label class="form__data__label" for="phone">Teléfono</label>
-        <input class="form__data__input js-phone" type="tel" name="phone" id="phone" placeholder="Ej: 555-55-55-55" />
+        <input class="form__data__input js-phone js-intro-phone" type="tel" name="phone" id="phone" placeholder="Ej: 555-55-55-55" />
         <label class="form__data__label " for="linkedin">Linkedin</label>
         <input class="form__data__input js-linkedin js-intro-linkedin" type="url" name="linkedin" id="linkedin"
           placeholder="Ej: linkedin.com/in/sally-hill" />

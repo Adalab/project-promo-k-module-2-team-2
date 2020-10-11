@@ -1,10 +1,12 @@
 'use strict';
+
 //Name//
 const introName = document.querySelector('.js-intro-name');
 const prevName = document.querySelector('.js-preview-name');
 
 function putName(){
   prevName.innerHTML = introName.value;
+  if (introName.value.length>introName.maxLength) introName.value = introName.value.slice (0, introName.maxLength);
 }
 
 introName.addEventListener('keyup',putName);
@@ -14,6 +16,7 @@ const prevJob = document.querySelector('.js-preview-job');
 
 function putJob(){
   prevJob.innerHTML = introJob.value;
+  if (introJob.value.length>introJob.maxLength) introJob.value = introJob.value.slice (0, introJob.maxLength);
 }
 
 introJob.addEventListener('keyup',putJob);
@@ -23,7 +26,7 @@ const introPhone = document.querySelector('.js-intro-phone');
 const prevPhone = document.querySelector('.js-preview-phone');
 
 function putPhone(){
-  prevPhone.href = introPhone.value;
+  prevPhone.href = 'tel:'+introPhone.value;
 }
 
 introPhone.addEventListener('keyup',putPhone);
@@ -33,7 +36,7 @@ const intMail = document.querySelector('.js-intro-mail');
 const preMail = document.querySelector('.js-preview-mail');
 
 function puMail(){
-  preMail.href = intMail.value;
+  preMail.href = 'mailto:' + intMail.value;
 }
 
 intMail.addEventListener('keyup',puMail);
@@ -53,7 +56,7 @@ const introGithub = document.querySelector('.js-intro-github');
 const prevGithub =  document.querySelector('.js-preview-github');
 
 function putGithub(){
-  prevGithub.href = introGithub.value;
+  prevGithub.href = 'https://github.com/' + introGithub.value;
 }
 
 introGithub.addEventListener('keyup',putGithub);
