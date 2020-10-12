@@ -9,6 +9,10 @@
   }
   .preview__card__sm__list__icon {
     border-color: $colorSecondaryLight;
+
+    &:hover {
+      border-color: $colorSecondaryMidtone;
+    }
   }
   .preview__card__sm__list__icon__link {
     color: $colorSecondaryDark;
@@ -26,6 +30,10 @@
   }
   .preview__card__sm__list__icon {
     border-color: $colorOptionSecondLight;
+
+    &:hover {
+      border-color: $colorOptionSecondMidtone;
+    }
   }
   .preview__card__sm__list__icon__link {
     color: $colorOptionSecondDark;
@@ -43,6 +51,10 @@
   }
   .preview__card__sm__list__icon {
     border-color: $colorOptionThirdLight;
+
+    &:hover {
+      border-color: $colorOptionThirdMidtone;
+    }
   }
   .preview__card__sm__list__icon__link {
     color: $colorOptionThirdDark;
