@@ -20,6 +20,8 @@ function changeName (){
   introName.value = "";
   profileImage.style.backgroundImage = "";
   profilePreview.style.backgroundImage = "";
+  fileField.removeAttribute("type", "file");
+  fileField.setAttribute("type", "file");
   job.innerHTML = resetButton1.job;
   introJob.value = "";
   introPhone.value = "";
