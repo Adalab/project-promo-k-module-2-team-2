@@ -10,8 +10,8 @@ const prevMail = document.querySelector('.js-preview-mail');
 
 // //crear un objeto y sus propiedades
 const resetButton1 = {};
-resetButton1.name = 'Nombre Apellido';
-resetButton1.job = 'Front-end developer';
+resetButton1.name = 'Nombre Apellido',
+resetButton1.job = 'Front-end developer',
 
 // //funcion a cada propiedad
 const paletteReset = document.querySelector('.js-palette');
