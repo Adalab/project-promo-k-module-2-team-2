@@ -60,6 +60,14 @@ function fillCard() {
     } else {
       if (previewCardElementRemove === true) {
         inputValue = inputValue.replace("@", "");
+        // for (let i = 0; i < formData.length; i++) {
+        //   inputValue = inputValue.replace(previewCardElementPrefix, "");
+        //
+      }
+      for (let i = 0; i < formData.length; i++) {
+        if (previewCardElementRemove === true) {
+          inputValue = inputValue.replace(previewCardElementPrefix, ""); //tratando de quitar los links
+        }
       }
       previewCardElement[previewCardElementProperty] =
         previewCardElementPrefix + inputValue;
