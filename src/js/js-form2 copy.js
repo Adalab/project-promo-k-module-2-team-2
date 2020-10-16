@@ -1,44 +1,44 @@
-'use strict';
+"use strict";
 
 // Optimized version
 
 const formData = {
   name: {
-    placeholder: 'Catrina de Guadalupe',
-    property: 'innerHTML',
-    prefix: '',
+    placeholder: "Catrina de Guadalupe",
+    property: "innerHTML",
+    prefix: "",
     remove: false,
   },
   job: {
-    placeholder: 'Calavera Garbancera',
-    property: 'innerHTML',
-    prefix: '',
+    placeholder: "Calavera Garbancera",
+    property: "innerHTML",
+    prefix: "",
     remove: false,
   },
   phone: {
-    placeholder: '1111111111',
-    property: 'href',
-    prefix: 'tel:',
+    placeholder: "1111111111",
+    property: "href",
+    prefix: "tel:",
     remove: false,
   },
   mail: {
-    placeholder: 'catrina.guadalupe@gmail.com',
-    property: 'href',
-    prefix: 'mailto:',
+    placeholder: "catrina.guadalupe@gmail.com",
+    property: "href",
+    prefix: "mailto:",
     remove: false,
   },
   linkedin: {
-    placeholder: '/catrina-de-guadalupe',
-    property: 'href',
-    prefix: 'https://linkedin.es/in/',
+    placeholder: "/catrina-de-guadalupe",
+    property: "href",
+    prefix: "https://linkedin.es/in/",
     remove: true,
   },
   github: {
-    placeholder: '@catrina-de-guadalupe',
-    property: 'href',
-    prefix: 'https://github.com/',
+    placeholder: "@catrina-de-guadalupe",
+    property: "href",
+    prefix: "https://github.com/",
     remove: true,
-  }
+  },
 };
 
 function fillCard() {
@@ -46,21 +46,25 @@ function fillCard() {
     // const input = event.currentTarget;
     const input = document.querySelector(`.js-intro-${formDataElement}`);
     const inputId = input.id;
-    const inputValue = input.value;
+    let inputValue = input.value;
     const previewCardElement = document.querySelector(`.js-preview-${inputId}`);
     const previewCardElementProperty = formData[inputId].property;
     const previewCardElementPlaceholder = formData[inputId].placeholder;
     const previewCardElementPrefix = formData[inputId].prefix;
+    const previewCardElementRemove = formData[inputId].remove;
 
-    if (inputValue === '') {
+    if (inputValue === "") {
       previewCardElement[
         previewCardElementProperty
       ] = previewCardElementPlaceholder;
     } else {
-      previewCardElement[previewCardElementProperty] = previewCardElementPrefix + inputValue;
+      if (previewCardElementRemove === true) {
+        inputValue = inputValue.replace("@", "");
+      }
+      previewCardElement[previewCardElementProperty] =
+        previewCardElementPrefix + inputValue;
     }
   }
-
 }
 
 function updateCard() {
@@ -69,10 +73,7 @@ function updateCard() {
   // fillPalette();
 }
 
-
 for (let formDataElement in formData) {
   const inputClass = document.querySelector(`.js-intro-${formDataElement}`);
-  inputClass.addEventListener('keyup', updateCard);
+  inputClass.addEventListener("keyup", updateCard);
 }
-
-
