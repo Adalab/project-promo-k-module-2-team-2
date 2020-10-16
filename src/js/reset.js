@@ -1,27 +1,27 @@
 /* eslint-disable no-unused-vars */
-"use strict";
+'use strict';
 
 //crear variables con los elementos del listener y los que queremos cambiar en la tarjeta
-const name = document.querySelector(".js-name");
-const reset = document.querySelector(".js-reset");
-const job = document.querySelector(".js-job");
-const introMail = document.querySelector(".js-mail");
-const prevMail = document.querySelector(".js-preview-mail");
+const name = document.querySelector('.js-name');
+const reset = document.querySelector('.js-reset');
+const job = document.querySelector('.js-job');
+const introMail = document.querySelector('.js-mail');
+const prevMail = document.querySelector('.js-preview-mail');
 
 // //crear un objeto y sus propiedades
 const resetButton1 = {};
-resetButton1.name = "Nombre Apellido";
-resetButton1.job = "Front-end developer";
+resetButton1.name = 'Nombre Apellido';
+resetButton1.job = 'Front-end developer';
 
 // //funcion a cada propiedad
-const paletteReset = document.querySelector(".js-palette");
+const paletteReset = document.querySelector('.js-palette');
 
 function changeName() {
   for (let formDataReset in formData) {
     const inputReset = document.querySelector(`.js-intro-${formDataReset}`);
-    inputReset.value = "";
+    inputReset.value = '';
   }
-  profileImage.style.backgroundImage = "";
+  profileImage.style.backgroundImage = '';
 
   updateCard();
   paletteChange();
@@ -39,7 +39,7 @@ function changeName() {
 }
 
 function putMail() {
-  prevMail.value = "www.google.es";
+  prevMail.value = 'www.google.es';
 }
 
 // function colorReset() {
@@ -57,5 +57,5 @@ function putMail() {
 // }
 
 //evento sobre el botón.
-reset.addEventListener("click", changeName);
-// reset.addEventListener("click", colorReset);
+reset.addEventListener('click', changeName);
+// reset.addEventListener('click', colorReset);
