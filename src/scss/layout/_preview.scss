@@ -1,6 +1,6 @@
 .preview {
   height: 457px;
-  border-radius: 6px;
+  border-radius: 6px; 
   @media all and (min-width: 768px) {
     height: 812px;
   }
@@ -9,20 +9,41 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: center;   
   }
+
   &__btn {
     width: 75px;
     height: 30px;
-    transform: translateX(-83px);
+    margin-right: 160px;
+    // transform: translateX(-83px);
     background-color: $colorTertiaryDarkLight;
     border: solid 1px $colorTertiaryLight;
     border-radius: 15px;
     margin-bottom: 20px;
-
-    &:hover {
-      background-color: $colorTertiaryMidtoneLight;
-    }
+  
+     @keyframes shake {
+      
+       0% { transform: translate(1px, 1px) rotate(0deg); }
+       10% { transform: translate(-1px, -2px) rotate(-1deg); }
+       20% { transform: translate(-3px, 0px) rotate(1deg); }
+       30% { transform: translate(3px, 2px) rotate(0deg); }
+       40% { transform: translate(1px, -1px) rotate(1deg); }
+       50% { transform: translate(-1px, 2px) rotate(-1deg); }
+       60% { transform: translate(-3px, 1px) rotate(0deg); }
+       70% { transform: translate(3px, 1px) rotate(-1deg); }
+       80% { transform: translate(-1px, -1px) rotate(1deg); }
+       90% { transform: translate(1px, 2px) rotate(0deg); }
+       100% { transform: translate(1px, -2px) rotate(-1deg); }
+     }
+        
+     &:hover  {
+    background-color: $colorTertiaryMidtone;
+    border: 1px solid $colorTertiaryDark; 
+    transition: 0.8s;
+    animation: shake 0.5s;
+    
+     }
 
     &__reset {
       padding-left: 8px;
@@ -33,6 +54,7 @@
     background-color: $colorTertiaryLight;
     width: 240px;
     height: 329px;
+    
 
     &__title {
       display: flex;
@@ -85,26 +107,44 @@
     display: flex;
     justify-content: space-evenly;
     padding-top: 10px;
-
+    padding-right: 50px;
     &__icon {
+     
+      padding-left: 0px;
       padding-top: 4px;
-      padding-left: 5px;
       border-radius: 60px;
       width: 32px;
       height: 32px;
-      border: 2px solid;
+      border: 2.3px solid $colorSecondaryLight;
 
       & .mobile {
-        padding-left: 3px;
+     padding-left:8px;
+     
       }
 
       & .linkedin {
-        padding-left: 1px;
+        padding-left: 6px;
+      }
+      & .mail {
+        padding-left: 5px;
+      }
+      
+      & .github {
+        padding-left: 5.5px;
       }
 
       &__link {
         font-size: 18px;
+        padding:6px 10px 4px 4px;
+        border-style: none;
+      
+  
+        
       }
+     
     }
   }
 }
+
+
+	
