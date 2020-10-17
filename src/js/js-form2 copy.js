@@ -80,10 +80,12 @@ function fillCard() {
 function updateCard() {
   fillCard();
   fillImage();
-  // fillPalette();
+  paletteChange();
 }
 
 for (let formDataElement in formData) {
   const inputClass = document.querySelector(`.js-intro-${formDataElement}`);
   inputClass.addEventListener('keyup', updateCard);
 }
+
+updateCard();

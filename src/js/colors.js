@@ -1,59 +1,43 @@
 'use strict';
 
+// Card class selector
+const palette = document.querySelector('.js-palette');
 
-// Color input selectors
+// Palette array
+const colorPalette = [0, 1, 2];
 
-const colorOption1 = document.querySelector('.js-color1');
-const colorOption2 = document.querySelector('.js-color2');
-const colorOption3 = document.querySelector('.js-color3');
+// Palette change function
 
-if (colorOption1.checked === false){
-  colorOption1.checked = true;
-}
-
-
-//Color change function
-
-function colorChange() {
-
-  // Card class selector
-
-  const palette = document.querySelector('.js-palette');
-
+function paletteChange() {
   // Card class remove
-
-  palette.classList.remove('palette1');
-  palette.classList.remove('palette2');
-  palette.classList.remove('palette3');
-
-  // Option 1
-
-  if (colorOption1.checked === true) {
-
-    //Palette 1
-    palette.classList.add('palette1');
+  for (let colorPaletteElement in colorPalette) {
+    palette.classList.remove(`palette${colorPaletteElement}`);
   }
 
-  // Option 2
-
-  if (colorOption2.checked === true) {
-
-    //Palette 2
-    palette.classList.add('palette2');
+  //Default palette
+  const defaultPalette = document.querySelector(`.js-color${colorPalette[0]}`);
+  palette.classList.add(`palette${colorPalette[0]}`);
+  if (defaultPalette.checked === false) {
+    defaultPalette.checked = true;
   }
 
-  // Option 3
+  function colorChange() {
+    // Options
+    for (let colorPaletteElement in colorPalette) {
+      const colorChoice = document.querySelector(
+        `.js-color${colorPaletteElement}`
+      );
+      if (colorChoice.checked === true)
+        palette.classList.add(`palette${colorPaletteElement}`);
+    }
+  }
 
-  if (colorOption3.checked === true) {
+  // Event listener
 
-    //Palette 3
-    palette.classList.add('palette3');
-
+  for (let colorPaletteElement in colorPalette) {
+    let colorChoiceCheck = document.querySelector(
+      `.js-color${colorPaletteElement}`
+    );
+    colorChoiceCheck.addEventListener('click', colorChange);
   }
 }
-
-// Event listeners on input
-
-colorOption1.addEventListener('click', colorChange);
-colorOption2.addEventListener('click', colorChange);
-colorOption3.addEventListener('click', colorChange);
