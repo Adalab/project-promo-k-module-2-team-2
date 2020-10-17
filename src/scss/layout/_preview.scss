@@ -9,7 +9,8 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;   
+    justify-content: center; 
+      
   }
 
   &__btn {
@@ -21,6 +22,7 @@
     border: solid 1px $colorTertiaryLight;
     border-radius: 15px;
     margin-bottom: 20px;
+    color:$colorTertiaryDark;
   
      @keyframes shake {
       
@@ -38,8 +40,9 @@
      }
         
      &:hover  {
-    background-color: $colorTertiaryMidtone;
-    border: 1px solid $colorTertiaryDark; 
+    background-color: $colorTertiaryDarkMidtone;
+    
+    color:$colorTertiaryLight;
     transition: 0.8s;
     animation: shake 0.5s;
     
@@ -54,6 +57,8 @@
     background-color: $colorTertiaryLight;
     width: 240px;
     height: 329px;
+    border-radius: 2px;
+    box-shadow: 0 1px 10px 0 rgba(0, 0, 0, 0.2), 0 1px 3px 0 rgba(0, 0, 0, 0.35);
     
 
     &__title {
@@ -109,13 +114,13 @@
     padding-top: 10px;
     padding-right: 50px;
     &__icon {
-     
       padding-left: 0px;
       padding-top: 4px;
-      border-radius: 60px;
+      border-radius: 16px;
       width: 32px;
       height: 32px;
-      border: 2.3px solid $colorSecondaryLight;
+      border: 2.2px solid $colorSecondaryLight;
+      
 
       & .mobile {
      padding-left:8px;
@@ -130,16 +135,14 @@
       }
       
       & .github {
-        padding-left: 5.5px;
+        padding-left: 5px;
       }
 
       &__link {
         font-size: 18px;
         padding:6px 10px 4px 4px;
-        border-style: none;
       
-  
-        
+      
       }
      
     }
