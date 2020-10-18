@@ -38,7 +38,7 @@ const formData = {
     property: 'href',
     prefix: 'https://github.com/',
     remove: true,
-  }
+  },
 };
 
 function fillCard() {
@@ -46,33 +46,46 @@ function fillCard() {
     // const input = event.currentTarget;
     const input = document.querySelector(`.js-intro-${formDataElement}`);
     const inputId = input.id;
-    const inputValue = input.value;
+    let inputValue = input.value;
     const previewCardElement = document.querySelector(`.js-preview-${inputId}`);
     const previewCardElementProperty = formData[inputId].property;
     const previewCardElementPlaceholder = formData[inputId].placeholder;
     const previewCardElementPrefix = formData[inputId].prefix;
+    const previewCardElementRemove = formData[inputId].remove;
 
     if (inputValue === '') {
       previewCardElement[
         previewCardElementProperty
       ] = previewCardElementPlaceholder;
     } else {
-      previewCardElement[previewCardElementProperty] = previewCardElementPrefix + inputValue;
+      if (previewCardElementRemove === true) {
+        inputValue = inputValue.replace(previewCardElementPrefix, '');
+        inputValue = inputValue.replace('@', '');
+        inputValue = inputValue.replace('/', '');
+        // inputValue = inputValue.replace(`${previewCardElementPrefix}`, ''); //tratando de quitar los links
+      }
+
+      // if (previewCardElementRemove === true) {
+      //   inputValue = inputValue.replace('@', '');
+      //   // for (let i = 0; i < formData.length; i++) {
+      //   //   inputValue = inputValue.replace(previewCardElementPrefix, '');
+      //   //
+      // }
+      previewCardElement[previewCardElementProperty] =
+        previewCardElementPrefix + inputValue;
     }
   }
-
 }
 
 function updateCard() {
   fillCard();
   fillImage();
-  // fillPalette();
+  paletteChange();
 }
-
 
 for (let formDataElement in formData) {
   const inputClass = document.querySelector(`.js-intro-${formDataElement}`);
   inputClass.addEventListener('keyup', updateCard);
 }
 
-
+updateCard();

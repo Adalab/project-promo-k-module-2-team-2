@@ -16,7 +16,6 @@ resetButton1.job = 'Front-end developer';
 // //funcion a cada propiedad
 const paletteReset = document.querySelector('.js-palette');
 
-
 function changeName() {
   for (let formDataReset in formData) {
     const inputReset = document.querySelector(`.js-intro-${formDataReset}`);
@@ -25,6 +24,7 @@ function changeName() {
   profileImage.style.backgroundImage = '';
 
   updateCard();
+  paletteChange();
 
   //name.innerHTML =  resetButton1.name;
   // introName.value = '';
@@ -42,20 +42,20 @@ function putMail() {
   prevMail.value = 'www.google.es';
 }
 
-function colorReset() {
-  const colorOption1 = document.querySelector('.js-color1');
-  if (paletteReset.classList.contains('palette1') === false) {
-    paletteReset.classList.add('palette1');
-    paletteReset.classList.remove('palette2');
-    paletteReset.classList.remove('palette3');
-  }
-  if (colorOption1.checked === false) {
-    colorOption1.checked = true;
-  }
-  // eslint-disable-next-line no-console
-  console.log(colorOption1);
-}
+// function colorReset() {
+//   const colorOption1 = document.querySelector('.js-color1');
+//   if (paletteReset.classList.contains('palette1') === false) {
+//     paletteReset.classList.add('palette1');
+//     paletteReset.classList.remove('palette2');
+//     paletteReset.classList.remove('palette3');
+//   }
+//   if (colorOption1.checked === false) {
+//     colorOption1.checked = true;
+//   }
+//   // eslint-disable-next-line no-console
+//   console.log(colorOption1);
+// }
 
 //evento sobre el botón.
 reset.addEventListener('click', changeName);
-reset.addEventListener('click', colorReset);
+// reset.addEventListener('click', colorReset);

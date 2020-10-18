@@ -15,7 +15,6 @@ const formBoxShare = document.querySelector(".form__share--container");
 function handleButtonArrowClick(event) {
   const openedButton = event.currentTarget;
   openedButton.classList.toggle("btn-rotate");
-  console.log("rotate");
 
   if (buttonArrowDesign.classList.contains("btn-rotate") === true) {
     formBoxDesign.style.height = "160px";
