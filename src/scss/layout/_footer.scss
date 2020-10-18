@@ -7,6 +7,18 @@
   align-items: center;
   padding: 18px 0 20px 0;
 
+  &__box {
+    display: flex;
+    align-items: center;
+  }
+  &__icon {
+    height: 60px;
+    margin: 10px;
+  }
+  &__copy {
+    color: $colorTertiaryDarkMidtone;
+  }
+
   @media all and (min-width: 768px) {
     flex-direction: row;
     justify-content: space-between;
