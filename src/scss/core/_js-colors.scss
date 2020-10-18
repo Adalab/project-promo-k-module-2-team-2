@@ -63,17 +63,21 @@
 
 // Fourth palette
 
-.palette4 {
+.palette3 {
   .preview__card__title__name {
-    color: purple;
+    color: $colorOptionFourthDark;
   }
   .preview__card__title__inner {
-    border-color: rgb(243, 106, 52);
+    border-color: $colorOptionFourthMidtone;
   }
   .preview__card__sm__list__icon {
-    border-color: rgb(243, 106, 52);
+    border-color: $colorOptionFourthMidtone;
+
+    &:hover {
+      border-color: $colorOptionFourthLight;
+    }
   }
   .preview__card__sm__list__icon__link {
-    color: purple;
+    color: $colorOptionFourthDark;
   }
 }
