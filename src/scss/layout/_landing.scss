@@ -89,5 +89,8 @@
     &:hover {
       background-color: $colorSecondaryDark;
     }
+    &__link {
+      padding: 10px 20px;
+    }
   }
 }
