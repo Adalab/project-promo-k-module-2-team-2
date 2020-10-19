@@ -31,13 +31,19 @@ function paletteChange() {
       const colorChoice = document.querySelector(
         `.js-color${colorPaletteElement}`
       );
+      // const paletteChoice = document.querySelectorAll(
+      //   `.js-col${colorPaletteElement}`
+      // );
+
+      // console.log(paletteChoice);
+      console.log(ev.currentTarget);
+      console.log(`.js-col${colorPaletteElement}`);
       if (
-        ev.currentTarget.classList.contains === `.js-col${colorPaletteElement}`
+        ev.currentTarget.classList.contains(`.js-col${colorPaletteElement}`)
       ) {
-        // colorChoice.checked = true;
-        console.log("el if");
-        palette.classList.add(`palette${colorPaletteElement}`);
         colorChoice.checked = true;
+        console.log("en el if");
+        palette.classList.add(`palette${colorPaletteElement}`);
       }
 
       //   if (colorChoice.checked === true)
@@ -48,9 +54,10 @@ function paletteChange() {
   // Event listener
 
   for (let colorPaletteElement in colorPalette) {
-    let colorChoiceCheck = document.querySelector(
-      `.js-color${colorPaletteElement}`
+    const colorChoiceCheck = document.querySelectorAll(
+      `.js-col${colorPaletteElement}`
     );
-    colorChoiceCheck.addEventListener("click", colorChange);
+    // console.log(colorChoiceCheck);
+    colorChoiceCheck[0].addEventListener("click", colorChange);
   }
 }
