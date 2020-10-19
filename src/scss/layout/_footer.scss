@@ -27,11 +27,14 @@
   }
 
   &__logo {
-    width: 103px;
-    height: 40px;
-    margin-top: 12px;
-    @media all and (min-width: 768px) {
-      margin: 10px 0;
+    cursor: pointer;
+    &__img {
+      width: 103px;
+      height: 40px;
+      margin-top: 12px;
+      @media all and (min-width: 768px) {
+        margin: 10px 0;
+      }
     }
   }
 }

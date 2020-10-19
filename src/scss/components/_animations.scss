@@ -1,5 +1,6 @@
 .form__box {
   &:hover {
+    cursor: pointer;
     .form__box__button__left-bar {
       &:after {
         background-color: #bfcdd0;
@@ -18,7 +19,6 @@
   justify-self: flex-end;
   height: 25px;
   width: 25px;
-  cursor: pointer;
   border: none;
   background-color: transparent;
   outline: none;
