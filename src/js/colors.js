@@ -21,7 +21,7 @@ function paletteChange() {
     defaultPalette.checked = true;
   }
 
-  function colorChange() {
+  function colorChange(ev) {
     // Card class remove
     for (let colorPaletteElement in colorPalette) {
       palette.classList.remove(`palette${colorPaletteElement}`);
@@ -31,8 +31,17 @@ function paletteChange() {
       const colorChoice = document.querySelector(
         `.js-color${colorPaletteElement}`
       );
-      if (colorChoice.checked === true)
+      if (
+        ev.currentTarget.classList.contains === `.js-col${colorPaletteElement}`
+      ) {
+        // colorChoice.checked = true;
+        console.log("el if");
         palette.classList.add(`palette${colorPaletteElement}`);
+        colorChoice.checked = true;
+      }
+
+      //   if (colorChoice.checked === true)
+      //     palette.classList.add(`palette${colorPaletteElement}`);
     }
   }
 
