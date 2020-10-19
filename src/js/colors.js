@@ -37,13 +37,12 @@ function paletteChange() {
 
       // console.log(paletteChoice);
       console.log(ev.currentTarget);
-      console.log(`.js-col${colorPaletteElement}`);
-      if (
-        ev.currentTarget.classList.contains(`.js-col${colorPaletteElement}`)
-      ) {
+      // console.log(`.js-col${colorPaletteElement}`);
+      if (ev.currentTarget.classList.contains(`js-col${colorPaletteElement}`)) {
         colorChoice.checked = true;
-        console.log("en el if");
+        console.log(`en el if ${colorPaletteElement}`);
         palette.classList.add(`palette${colorPaletteElement}`);
+        console.log(palette);
       }
 
       //   if (colorChoice.checked === true)
@@ -53,11 +52,11 @@ function paletteChange() {
 
   // Event listener
 
-  for (let colorPaletteElement in colorPalette) {
-    const colorChoiceCheck = document.querySelectorAll(
+  for (let colorPaletteElement of colorPalette) {
+    const colorChoiceCheck = document.querySelector(
       `.js-col${colorPaletteElement}`
     );
     // console.log(colorChoiceCheck);
-    colorChoiceCheck[0].addEventListener("click", colorChange);
+    colorChoiceCheck.addEventListener("click", colorChange);
   }
 }
