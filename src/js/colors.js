@@ -22,31 +22,16 @@ function paletteChange() {
   }
 
   function colorChange(ev) {
-    // Card class remove
-    for (let colorPaletteElement in colorPalette) {
-      palette.classList.remove(`palette${colorPaletteElement}`);
-    }
     // Options
     for (let colorPaletteElement in colorPalette) {
+      palette.classList.remove(`palette${colorPaletteElement}`);
       const colorChoice = document.querySelector(
         `.js-color${colorPaletteElement}`
       );
-      // const paletteChoice = document.querySelectorAll(
-      //   `.js-col${colorPaletteElement}`
-      // );
-
-      // console.log(paletteChoice);
-      console.log(ev.currentTarget);
-      // console.log(`.js-col${colorPaletteElement}`);
       if (ev.currentTarget.classList.contains(`js-col${colorPaletteElement}`)) {
         colorChoice.checked = true;
-        console.log(`en el if ${colorPaletteElement}`);
         palette.classList.add(`palette${colorPaletteElement}`);
-        console.log(palette);
       }
-
-      //   if (colorChoice.checked === true)
-      //     palette.classList.add(`palette${colorPaletteElement}`);
     }
   }
 
