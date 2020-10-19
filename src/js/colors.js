@@ -4,7 +4,7 @@
 const palette = document.querySelector(".js-palette");
 
 // Palette array
-const colorPalette = [0, 1, 2];
+const colorPalette = [0, 1, 2, 3];
 
 // Palette change function
 

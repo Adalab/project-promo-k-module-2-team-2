@@ -1,6 +1,11 @@
 .preview {
   height: 457px;
   border-radius: 6px;
+  background-image: url(../../assets/images/orange-flowers.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
   @media all and (min-width: 768px) {
     height: 812px;
   }
@@ -11,21 +16,28 @@
     align-items: center;
     justify-content: center;
   }
+
   &__btn {
+    cursor: pointer;
     width: 75px;
     height: 30px;
-    transform: translateX(-83px);
+    margin-right: 160px;
+    // transform: translateX(-83px);
     background-color: $colorTertiaryDarkLight;
     border: solid 1px $colorTertiaryLight;
     border-radius: 15px;
     margin-bottom: 20px;
-
-    &:hover {
-      background-color: $colorTertiaryMidtoneLight;
-    }
+    color: $colorTertiaryDark;
 
     &__reset {
       padding-left: 8px;
+    }
+
+    &:hover {
+      background-color: $colorTertiaryDarkMidtone;
+      color: $colorTertiaryLight;
+      transition: 0.8s;
+      animation: shake 0.5s;
     }
   }
 
@@ -33,6 +45,8 @@
     background-color: $colorTertiaryLight;
     width: 240px;
     height: 329px;
+    border-radius: 2px;
+    box-shadow: 0 1px 10px 0 rgba(0, 0, 0, 0.2), 0 1px 3px 0 rgba(0, 0, 0, 0.35);
 
     &__title {
       display: flex;
@@ -85,25 +99,33 @@
     display: flex;
     justify-content: space-evenly;
     padding-top: 10px;
-
+    padding-right: 50px;
     &__icon {
+      padding-left: 0px;
       padding-top: 4px;
-      padding-left: 5px;
-      border-radius: 60px;
+      border-radius: 16px;
       width: 32px;
       height: 32px;
-      border: 2px solid;
+      border: 2.2px solid $colorSecondaryLight;
 
       & .mobile {
-        padding-left: 3px;
+        padding-left: 8px;
       }
 
       & .linkedin {
-        padding-left: 1px;
+        padding-left: 6px;
+      }
+      & .mail {
+        padding-left: 5px;
+      }
+
+      & .github {
+        padding-left: 5px;
       }
 
       &__link {
         font-size: 18px;
+        padding: 6px 10px 4px 4px;
       }
     }
   }

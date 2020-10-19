@@ -3,6 +3,8 @@
   &__data {
     display: flex;
     flex-direction: column;
+    padding-right: 1px;
+    padding-left: 1px;
 
     // interactive show/hide
     height: 0;

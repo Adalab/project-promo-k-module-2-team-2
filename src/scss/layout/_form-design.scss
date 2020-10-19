@@ -23,6 +23,9 @@
     }
     &__input {
       margin-right: 10px;
+      &:focus {
+        outline: none;
+      }
     }
     &__option {
       display: flex;
@@ -53,6 +56,15 @@
     }
     &__nineth {
       background-color: $colorOptionThirdLight;
+    }
+    &__tenth {
+      background-color: $colorOptionFourthDark;
+    }
+    &__eleventh {
+      background-color: $colorOptionFourthLight;
+    }
+    &__twelfth {
+      background-color: $colorOptionFourthMidtone;
     }
   }
 }
