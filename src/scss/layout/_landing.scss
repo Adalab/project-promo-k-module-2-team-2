@@ -9,9 +9,9 @@
   background-color: $colorTertiaryLightMid;
   @media (min-width: 768px) {
     height: 90vh;
-    @media (max-height: 570px) {
-      height: auto;
-    }
+  }
+  @media (max-height: 570px) {
+    height: auto;
   }
   &__img {
     width: 250px;
@@ -87,10 +87,10 @@
       top: 80vh;
       height: 42px;
       width: 129px;
-      @media (max-height: 570px) {
-        position: unset;
-        margin-top: 10px;
-      }
+    }
+    @media (max-height: 570px) {
+      position: unset;
+      margin-top: 10px;
     }
     &:hover {
       background-color: $colorSecondaryDark;
