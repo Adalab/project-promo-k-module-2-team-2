@@ -6,6 +6,7 @@
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
+    align-items: center;
   }
   &__button {
     justify-self: flex-end;
