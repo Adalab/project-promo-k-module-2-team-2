@@ -39,6 +39,9 @@
   &__icons {
     border-radius: 4px;
     border: solid 1.6px $colorPrimaryDull;
+    @media (min-width: 768px) {
+      border-width: 2px;
+    }
     &__list {
       height: 73.8px;
       width: 268px;

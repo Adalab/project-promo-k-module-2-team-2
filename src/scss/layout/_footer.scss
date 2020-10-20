@@ -23,7 +23,7 @@
   @media all and (min-width: 768px) {
     flex-direction: row;
     justify-content: space-between;
-    padding: 0 41px 0 40px;
+    padding: 0 41px 0 20px;
   }
 
   &__logo {
@@ -32,9 +32,6 @@
       width: 103px;
       height: 40px;
       margin-top: 12px;
-      @media all and (min-width: 768px) {
-        margin: 10px 0;
-      }
     }
   }
 }
