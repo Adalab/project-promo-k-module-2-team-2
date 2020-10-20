@@ -25,7 +25,7 @@ function handleButtonArrowClick(event) {
   }
 
   if (buttonArrowFill.classList.contains("btn-rotate") === true) {
-    formBoxFill.style.height = "586px";
+    formBoxFill.style.height = "556px";
     formBoxFill.style.opacity = "1";
   } else if (buttonArrowFill.classList.contains("btn-rotate") === false) {
     formBoxFill.style.height = "0";

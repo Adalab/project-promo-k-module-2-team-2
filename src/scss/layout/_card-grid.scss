@@ -9,6 +9,8 @@
       $colorTertiaryLight 9%
     );
     padding: 20px 40px;
+    height: 80vh;
+    overflow-y: auto;
   }
   .form {
     grid-column: 1/2;

@@ -30,12 +30,11 @@
       &:focus {
         outline: none;
       }
-      &:checked{
+      &:checked {
         appearance: none;
         border: 5px solid $colorSecondaryMidtone;
         transition: linear 0.05s;
       }
-      
     }
     &__option {
       display: flex;
