@@ -10,9 +10,9 @@ const colorPalette = [0, 1, 2, 3];
 
 function paletteChange() {
   // Card class remove
-  for (let colorPaletteElement in colorPalette) {
-    palette.classList.remove(`palette${colorPaletteElement}`);
-  }
+  // for (let colorPaletteElement in colorPalette) {
+  //   palette.classList.remove(`palette${colorPaletteElement}`);
+  // }
 
   //Default palette
   const defaultPalette = document.querySelector(`.js-color${colorPalette[0]}`);
@@ -24,13 +24,14 @@ function paletteChange() {
   function colorChange(ev) {
     // Options
     for (let colorPaletteElement in colorPalette) {
-      palette.classList.remove(`palette${colorPaletteElement}`);
+      const colorPaletteItem = colorPalette[colorPaletteElement];
+      palette.classList.remove(`palette${colorPaletteItem}`);
       const colorChoice = document.querySelector(
-        `.js-color${colorPaletteElement}`
+        `.js-color${colorPaletteItem}`
       );
-      if (ev.currentTarget.classList.contains(`js-col${colorPaletteElement}`)) {
+      if (ev.currentTarget.classList.contains(`js-col${colorPaletteItem}`)) {
         colorChoice.checked = true;
-        palette.classList.add(`palette${colorPaletteElement}`);
+        palette.classList.add(`palette${colorPaletteItem}`);
       }
     }
   }
