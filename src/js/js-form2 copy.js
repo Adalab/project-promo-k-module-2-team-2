@@ -67,11 +67,32 @@ function fillCard() {
     }
   }
 }
+function setDataInLocalStorage() {
+  for (let formDataElement in formData) {
+    const input = document.querySelector(`.js-intro-${formDataElement}`);
+    let inputValue = input.value;
+    localStorage.setItem(
+      `formData${formDataElement}`,
+      JSON.stringify(inputValue)
+    );
+  }
+}
+
+function getDataFromLocalStorage() {
+  for (let formDataElement in formData) {
+    const savedData = JSON.parse(
+      localStorage.getItem(`formData${formDataElement}`)
+    );
+    const input = document.querySelector(`.js-intro-${formDataElement}`);
+    input.value = savedData;
+  }
+}
 
 function updateCard() {
   fillCard();
   fillImage();
   paletteChange();
+  setDataInLocalStorage();
 }
 
 for (let formDataElement in formData) {
@@ -79,4 +100,5 @@ for (let formDataElement in formData) {
   inputClass.addEventListener("keyup", updateCard);
 }
 
+getDataFromLocalStorage();
 updateCard();
