@@ -1,42 +1,42 @@
-"use strict";
+'use strict';
 
 // Optimized version
 
 const formData = {
   name: {
-    placeholder: "Catrina de Guadalupe",
-    property: "innerHTML",
-    prefix: "",
+    placeholder: 'Catrina de Guadalupe',
+    property: 'innerHTML',
+    prefix: '',
     remove: false,
   },
   job: {
-    placeholder: "Calavera Garbancera",
-    property: "innerHTML",
-    prefix: "",
+    placeholder: 'Calavera Garbancera',
+    property: 'innerHTML',
+    prefix: '',
     remove: false,
   },
   phone: {
-    placeholder: "1111111111",
-    property: "href",
-    prefix: "tel:",
+    placeholder: '1111111111',
+    property: 'href',
+    prefix: 'tel:',
     remove: false,
   },
-  mail: {
-    placeholder: "catrina.guadalupe@gmail.com",
-    property: "href",
-    prefix: "mailto:",
+  email: {
+    placeholder: 'catrina.guadalupe@gmail.com',
+    property: 'href',
+    prefix: 'mailto:',
     remove: false,
   },
   linkedin: {
-    placeholder: "/catrina-de-guadalupe",
-    property: "href",
-    prefix: "https://linkedin.es/in/",
+    placeholder: '/catrina-de-guadalupe',
+    property: 'href',
+    prefix: 'https://linkedin.es/in/',
     remove: true,
   },
   github: {
-    placeholder: "@catrina-de-guadalupe",
-    property: "href",
-    prefix: "https://github.com/",
+    placeholder: '@catrina-de-guadalupe',
+    property: 'href',
+    prefix: 'https://github.com/',
     remove: true,
   },
 };
@@ -52,15 +52,15 @@ function fillCard() {
     const previewCardElementPrefix = formData[inputId].prefix;
     const previewCardElementRemove = formData[inputId].remove;
 
-    if (inputValue === "") {
+    if (inputValue === '') {
       previewCardElement[
         previewCardElementProperty
       ] = previewCardElementPlaceholder;
     } else {
       if (previewCardElementRemove === true) {
-        inputValue = inputValue.replace(previewCardElementPrefix, "");
-        inputValue = inputValue.replace("@", "");
-        inputValue = inputValue.replace("/", "");
+        inputValue = inputValue.replace(previewCardElementPrefix, '');
+        inputValue = inputValue.replace('@', '');
+        inputValue = inputValue.replace('/', '');
       }
       previewCardElement[previewCardElementProperty] =
         previewCardElementPrefix + inputValue;
@@ -73,32 +73,28 @@ function setDataInLocalStorage() {
     let inputValue = input.value;
     localStorage.setItem(formDataElement, JSON.stringify(inputValue));
   }
-  for (let colorPaletteElement in colorPalette) {
-    let radioChecked = document.querySelector(
-      `.js-color${colorPaletteElement}`
-    );
-    if (radioChecked.checked === true) {
-      localStorage.setItem("palette", JSON.stringify(colorPaletteElement));
-    }
-  }
 }
-console.log(localStorage);
+// console.log(localStorage);
 
 function getDataFromLocalStorage() {
-  let savedData = [];
+  // Form data
   for (let formDataElement in formData) {
-    let savedData = JSON.parse(
-      localStorage.getItem(`formData${formDataElement}`)
+    const savedData = JSON.parse(
+      localStorage.getItem(formDataElement)
     );
     const input = document.querySelector(`.js-intro-${formDataElement}`);
     input.value = savedData;
   }
-  for (let colorPaletteElement in colorPalette) {
-    let savedData = JSON.parse(localStorage.getItem(colorPaletteElement));
-    const palette = document.querySelector(`.js-color${colorPaletteElement}`);
-    palette.classList.add(`palette${colorPaletteElement}`);
-    palette.checked = true;
-  }
+
+  // Color palette
+  const savedColor = JSON.parse(localStorage.getItem('palette'));
+  const palette = document.querySelector('.js-palette');
+  palette.classList.add(`palette${savedColor}`);
+
+  // Image
+  const savedPhoto = localStorage.getItem('photo');
+  const cardPhoto = document.querySelector('.js__profile-image');
+  cardPhoto.style.backgroundImage = `url(${savedPhoto})`;
 }
 
 function updateCard() {
@@ -110,7 +106,7 @@ function updateCard() {
 
 for (let formDataElement in formData) {
   const inputClass = document.querySelector(`.js-intro-${formDataElement}`);
-  inputClass.addEventListener("keyup", updateCard);
+  inputClass.addEventListener('keyup', updateCard);
 }
 
 getDataFromLocalStorage();

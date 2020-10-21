@@ -15,11 +15,11 @@ function paletteChange() {
   // }
 
   //Default palette
-  const defaultPalette = document.querySelector(`.js-color${colorPalette[0]}`);
-  palette.classList.add(`palette${colorPalette[0]}`);
-  if (defaultPalette.checked === false) {
-    defaultPalette.checked = true;
-  }
+  // const defaultPalette = document.querySelector(`.js-color${colorPalette[0]}`);
+  // palette.classList.add(`palette${colorPalette[0]}`);
+  // if (defaultPalette.checked === false) {
+  //   defaultPalette.checked = true;
+  // }
 
   function colorChange(ev) {
     // Options
@@ -32,6 +32,7 @@ function paletteChange() {
       if (ev.currentTarget.classList.contains(`js-col${colorPaletteItem}`)) {
         colorChoice.checked = true;
         palette.classList.add(`palette${colorPaletteItem}`);
+        localStorage.setItem("palette", JSON.stringify(colorPaletteElement));
       }
     }
   }
