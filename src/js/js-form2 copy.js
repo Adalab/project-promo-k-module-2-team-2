@@ -72,6 +72,7 @@ function setDataInLocalStorage() {
     const input = document.querySelector(`.js-intro-${formDataElement}`);
     let inputValue = input.value;
     localStorage.setItem(formDataElement, JSON.stringify(inputValue));
+    linkData[`${formDataElement}`] = inputValue;
   }
 }
 
@@ -102,6 +103,7 @@ function updateCard() {
   paletteChange();
   fillImage();
   setDataInLocalStorage();
+  setData();
   sendRequest();
   showURL(true);
 }

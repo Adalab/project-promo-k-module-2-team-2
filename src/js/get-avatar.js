@@ -17,6 +17,7 @@ function writeImage() {
   fileField.removeAttribute('type', 'file');
   fileField.setAttribute('type', 'file');
   localStorage.setItem('photo', `url(${fr.result})`);
+  console.log(linkData);
   fillImage();
 }
 
@@ -30,3 +31,4 @@ function fakeFileClick() {
 
 uploadBtn.addEventListener('click', fakeFileClick);
 fileField.addEventListener('change', getImage);
+

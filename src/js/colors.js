@@ -1,5 +1,15 @@
 'use strict';
 
+//Data array
+const linkData = {};
+
+function setData (){
+  let cardImage = document.querySelector('.js__profile-image').style.backgroundImage;
+  cardImage = cardImage.slice(5, cardImage.length, 1);
+  linkData.photo = cardImage;
+}
+
+
 // Card class selector
 const palette = document.querySelector('.js-palette');
 
@@ -22,8 +32,11 @@ function paletteChange() {
         colorChoice.checked = true;
         palette.classList.add(`palette${colorPaletteItem}`);
         localStorage.setItem('palette', JSON.stringify(colorPaletteElement));
+        linkData.palette = colorPaletteItem;
       }
     }
+  sendRequest();
+  showURL(true);
   }
 
   // Event listener
@@ -54,4 +67,3 @@ function startPhoto() {
     previewPhoto.style.backgroundImage = 'none';
   }
 }
-

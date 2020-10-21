@@ -1,9 +1,10 @@
 'use strict';
 
+
 function sendRequest(json) {
   fetch('https://us-central1-awesome-cards-cf6f0.cloudfunctions.net/card/', {
     method: 'POST',
-    body: JSON.stringify(localStorage),
+    body: JSON.stringify(linkData),
     headers: {
       'content-type': 'application/json',
     },
@@ -14,6 +15,7 @@ function sendRequest(json) {
     .then(function (result) {
       showURL(result);
     });
+    console.log(linkData);
 }
 
 function showURL(result) {
@@ -39,9 +41,8 @@ function createTwitterLink(result) {
   const twitterText = encodeURIComponent(
     "¡He creado mi tarjeta con Catrina's profile cards!"
   );
-  
+
   const twitterURL = document.querySelector(".js-card-link2").href;
   // const twitterURL = result.cardURL;
-  console.log(twitterURL);
   buttonTwitter.href = `https://twitter.com/intent/tweet?text=${twitterText}&url=${twitterURL}`;
 }
