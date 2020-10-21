@@ -74,7 +74,6 @@ function setDataInLocalStorage() {
     localStorage.setItem(formDataElement, JSON.stringify(inputValue));
   }
 }
-// console.log(localStorage);
 
 function getDataFromLocalStorage() {
   // Form data
@@ -101,6 +100,7 @@ function updateCard() {
   fillCard();
   fillImage();
   paletteChange();
+  startPage();
   setDataInLocalStorage();
 }
 

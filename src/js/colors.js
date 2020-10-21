@@ -10,9 +10,9 @@ const colorPalette = [0, 1, 2, 3];
 
 function paletteChange() {
   // Card class remove
-  // for (let colorPaletteElement in colorPalette) {
-  //   palette.classList.remove(`palette${colorPaletteElement}`);
-  // }
+  for (let colorPaletteElement in colorPalette) {
+    palette.classList.remove(`palette${colorPaletteElement}`);
+  }
 
   //Default palette
   // const defaultPalette = document.querySelector(`.js-color${colorPalette[0]}`);
@@ -47,3 +47,20 @@ function paletteChange() {
     colorChoiceCheck.addEventListener("click", colorChange);
   }
 }
+
+// Startup
+
+function startPage (){
+  const previewPhoto = document.querySelector('.js__profile-image');
+  const storedPhoto = localStorage.getItem('palette');
+  
+  if (palette.classList.contains('palettenull')){
+    palette.classList.add('palette0');
+    palette.classList.remove('palettenull');
+  };
+  
+  if (storedPhoto === null){
+    previewPhoto.style.backgroundImage = '';
+  }
+};
+
