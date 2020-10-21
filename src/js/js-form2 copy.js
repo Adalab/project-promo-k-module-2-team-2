@@ -71,20 +71,33 @@ function setDataInLocalStorage() {
   for (let formDataElement in formData) {
     const input = document.querySelector(`.js-intro-${formDataElement}`);
     let inputValue = input.value;
-    localStorage.setItem(
-      `formData${formDataElement}`,
-      JSON.stringify(inputValue)
+    localStorage.setItem(formDataElement, JSON.stringify(inputValue));
+  }
+  for (let colorPaletteElement in colorPalette) {
+    let radioChecked = document.querySelector(
+      `.js-color${colorPaletteElement}`
     );
+    if (radioChecked.checked === true) {
+      localStorage.setItem("palette", JSON.stringify(colorPaletteElement));
+    }
   }
 }
+console.log(localStorage);
 
 function getDataFromLocalStorage() {
+  let savedData = [];
   for (let formDataElement in formData) {
-    const savedData = JSON.parse(
+    let savedData = JSON.parse(
       localStorage.getItem(`formData${formDataElement}`)
     );
     const input = document.querySelector(`.js-intro-${formDataElement}`);
     input.value = savedData;
+  }
+  for (let colorPaletteElement in colorPalette) {
+    let savedData = JSON.parse(localStorage.getItem(colorPaletteElement));
+    const palette = document.querySelector(`.js-color${colorPaletteElement}`);
+    palette.classList.add(`palette${colorPaletteElement}`);
+    palette.checked = true;
   }
 }
 
