@@ -18,10 +18,12 @@ function sendRequest(json) {
 }
 
 function showURL(result) {
+  const cardLink = document.querySelector(".js-card-link");
+
   if (result.success) {
-    responseURL.innerHTML =
+    cardLink.innerHTML =
       "<a href=" + result.cardURL + ">" + result.cardURL + "</a>";
   } else {
-    responseURL.innerHTML = "ERROR:" + result.error;
+    cardLink.innerHTML = "ERROR:" + result.error;
   }
 }

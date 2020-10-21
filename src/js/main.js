@@ -60,6 +60,8 @@ function handleButtonSubmit(event) {
     const shareMessageBox = document.querySelector(".form__share--message");
     shareMessageBox.classList.add("js-show-form__share--message");
   }
+  sendRequest();
+  showURL(false);
 
   event.preventDefault();
 }
