@@ -14,6 +14,11 @@ function resetCard() {
   }
   profileImage.style.backgroundImage = '';
 
+  for (let colorPaletteElement in colorPalette) {
+    palette.classList.remove(`palette${colorPaletteElement}`);
+  }
+  palette.classList.add('palette0');
+
   updateCard();
   paletteChange();
 
