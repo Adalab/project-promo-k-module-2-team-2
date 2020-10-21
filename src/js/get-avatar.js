@@ -35,6 +35,7 @@ function writeImage() {
   profileImage.style.backgroundImage = `url(${fr.result})`;
   fileField.removeAttribute('type', 'file');
   fileField.setAttribute('type', 'file');
+  localStorage.setItem('photo', fr.result);
   fillImage();
 }
 

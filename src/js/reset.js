@@ -5,8 +5,8 @@
 const name = document.querySelector('.js-name');
 const reset = document.querySelector('.js-reset');
 const job = document.querySelector('.js-job');
-const introMail = document.querySelector('.js-mail');
-const prevMail = document.querySelector('.js-preview-mail');
+const introMail = document.querySelector('.js-email');
+const prevMail = document.querySelector('.js-preview-email');
 
 // //crear un objeto y sus propiedades
 const resetButton1 = {};
@@ -38,9 +38,9 @@ function changeName() {
   // introLinkedin.value = '';
 }
 
-function putMail() {
-  prevMail.value = 'www.google.es';
-}
+// function putMail() {
+//   prevMail.value = 'www.google.es';
+// }
 
 // function colorReset() {
 //   const colorOption1 = document.querySelector('.js-color1');
