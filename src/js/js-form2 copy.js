@@ -111,6 +111,6 @@ for (let formDataElement in formData) {
   inputClass.addEventListener('keyup', updateCard);
 }
 
-startPhoto();
+// startPhoto();
 getDataFromLocalStorage();
 updateCard();
