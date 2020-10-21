@@ -6,8 +6,8 @@
   background-position: center;
   background-repeat: no-repeat;
 
-  @media all and (min-width: 768px) {
-    min-height: 750px;
+  @media (min-width: 768px) {
+    min-height: 700px;
     height: 100%;
   }
   &__box {
