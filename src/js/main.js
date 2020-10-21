@@ -62,6 +62,7 @@ function handleButtonSubmit(event) {
   }
   sendRequest();
   showURL(true);
+  createTwitterLink(true);
 
   event.preventDefault();
 }

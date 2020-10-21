@@ -22,8 +22,24 @@ function showURL(result) {
 
   if (result.success === true) {
     cardLink.innerHTML =
-      "<a href=" + result.cardURL + ">" + result.cardURL + "</a>";
+      "<a href=" +
+      result.cardURL +
+      ' target="_blank"' +
+      ">" +
+      result.cardURL +
+      "</a>";
   } else {
     cardLink.innerHTML = "ERROR:" + result.error;
   }
+}
+
+// button twitter
+
+function createTwitterLink(result) {
+  const buttonTwitter = document.querySelector(".js-twitter");
+  const twitterText = encodeURIComponent(
+    "¡He creado mi tarjeta con Catrina's profile cards!"
+  );
+  const twitterURL = result.cardURL;
+  buttonTwitter.href = `https://twitter.com/intent/tweet?text=${twitterText}&url=${twitterURL}`;
 }
