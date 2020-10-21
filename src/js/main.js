@@ -59,8 +59,8 @@ function handleButtonSubmit(event) {
     const shareMessageBox = document.querySelector('.form__share--message');
     shareMessageBox.classList.add('js-show-form__share--message');
   }
-  sendRequest();
-  showURL(true);
+  // sendRequest();
+  // showURL(true);
   createTwitterLink(true);
 
   event.preventDefault();

@@ -1,9 +1,11 @@
+'use strict';
+
 function sendRequest(json) {
-  fetch("https://us-central1-awesome-cards-cf6f0.cloudfunctions.net/card/", {
-    method: "POST",
+  fetch('https://us-central1-awesome-cards-cf6f0.cloudfunctions.net/card/', {
+    method: 'POST',
     body: JSON.stringify(localStorage),
     headers: {
-      "content-type": "application/json",
+      'content-type': 'application/json',
     },
   })
     .then(function (resp) {
@@ -11,35 +13,35 @@ function sendRequest(json) {
     })
     .then(function (result) {
       showURL(result);
-    })
-    .catch(function (error) {
-      console.log(error);
     });
 }
 
 function showURL(result) {
-  const cardLink = document.querySelector(".js-card-link");
+  const cardLink = document.querySelector('.js-card-link');
 
   if (result.success === true) {
     cardLink.innerHTML =
-      "<a href=" +
+      '<a href=' +
       result.cardURL +
-      ' target="_blank"' +
-      ">" +
+      ' target="_blank"' + ' class="card-link js-card-link2 txt-bright txt-xs"' +
+      '>' +
       result.cardURL +
-      "</a>";
+      '</a>';
   } else {
-    cardLink.innerHTML = "ERROR:" + result.error;
+    cardLink.innerHTML = 'ERROR:' + result.error;
   }
 }
 
 // button twitter
 
 function createTwitterLink(result) {
-  const buttonTwitter = document.querySelector(".js-twitter");
+  const buttonTwitter = document.querySelector('.js-twitter');
   const twitterText = encodeURIComponent(
     "¡He creado mi tarjeta con Catrina's profile cards!"
   );
-  const twitterURL = result.cardURL;
+  
+  const twitterURL = document.querySelector(".js-card-link2").href;
+  // const twitterURL = result.cardURL;
+  console.log(twitterURL);
   buttonTwitter.href = `https://twitter.com/intent/tweet?text=${twitterText}&url=${twitterURL}`;
 }

@@ -93,15 +93,17 @@ function getDataFromLocalStorage() {
   // Image
   const savedPhoto = localStorage.getItem('photo');
   const cardPhoto = document.querySelector('.js__profile-image');
-  cardPhoto.style.backgroundImage = `url(${savedPhoto})`;
+  cardPhoto.style.backgroundImage = savedPhoto;
 }
 
 function updateCard() {
+  startPalette();
   fillCard();
-  fillImage();
   paletteChange();
-  startPage();
+  fillImage();
   setDataInLocalStorage();
+  sendRequest();
+  showURL(true);
 }
 
 for (let formDataElement in formData) {
@@ -109,5 +111,6 @@ for (let formDataElement in formData) {
   inputClass.addEventListener('keyup', updateCard);
 }
 
+startPhoto();
 getDataFromLocalStorage();
 updateCard();

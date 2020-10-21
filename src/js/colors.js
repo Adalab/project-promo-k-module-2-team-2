@@ -39,17 +39,19 @@ function paletteChange() {
 
 // Startup
 
-function startPage (){
-  const previewPhoto = document.querySelector('.js__profile-image');
-  const storedPhoto = localStorage.getItem('palette');
+function startPalette (){
 
   if (palette.classList.contains('palettenull')){
     palette.classList.add('palette0');
     palette.classList.remove('palettenull');
   }
+}
 
+function startPhoto() {
+  const previewPhoto = document.querySelector('.js__profile-image');
+  const storedPhoto = localStorage.getItem('palette');
   if (storedPhoto === null){
-    previewPhoto.style.backgroundImage = '';
+    previewPhoto.style.backgroundImage = 'none';
   }
 }
 
