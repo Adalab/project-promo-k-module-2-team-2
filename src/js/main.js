@@ -61,7 +61,7 @@ function handleButtonSubmit(event) {
     shareMessageBox.classList.add("js-show-form__share--message");
   }
   sendRequest();
-  showURL(false);
+  showURL(true);
 
   event.preventDefault();
 }

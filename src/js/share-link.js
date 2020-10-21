@@ -20,7 +20,7 @@ function sendRequest(json) {
 function showURL(result) {
   const cardLink = document.querySelector(".js-card-link");
 
-  if (result.success) {
+  if (result.success === true) {
     cardLink.innerHTML =
       "<a href=" + result.cardURL + ">" + result.cardURL + "</a>";
   } else {
