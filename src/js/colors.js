@@ -32,7 +32,7 @@ function paletteChange() {
         colorChoice.checked = true;
         palette.classList.add(`palette${colorPaletteItem}`);
         localStorage.setItem('palette', JSON.stringify(colorPaletteElement));
-        linkData.palette = colorPaletteItem;
+        linkData.palette = colorPaletteItem + 1;
       }
     }
   sendRequest();
