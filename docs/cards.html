@@ -6,7 +6,7 @@
     <title>Catrina's awesome profile-cards</title>
     <link
             rel="shortcut icon"
-            href="./assets/images/catrina-la-calavera-.png"
+            href="./assets/images/catrina.png"
             type="image/x-icon"
         />
     <script
@@ -23,11 +23,9 @@
 
   <body>
     <header class="header" role="banner">
-
-        <img class="header__logo" src="./assets/images/logo-awesome-profile-cards.svg" alt="Awesome profile cards Logo" title= "Awesome profile cards Logo">
-
-
-
+        <a href="/index.html" class="header__link">
+            <img class="header__link__logo" src="./assets/images/Catrinas-7.png" alt="Awesome profile cards Logo" title= "Página principal">
+        </a>
     </header>
 
     <div class="grid">
@@ -35,7 +33,7 @@
           <div class="preview__box">
               <button class="preview__btn txt-xs txt-up txt-fsec js-reset" type="reset" title="Reset"><i class="far fa-trash-alt"></i><span
                       class="preview__btn__reset">Reset</span></button>
-              <article class="preview__card palette1 js-palette">
+              <article class="preview__card js-palette palette0">
                   <div class="preview__card__title">
                       <div class="preview__card__title__inner txt-fter">
                           <h2 class="preview__card__title__name js-name js-preview-name">Nombre Apellido</h2>
@@ -50,14 +48,14 @@
                   <nav class="preview__card__sm" role="navigation">
                       <ul class="preview__card__sm__list">
                           <li class="preview__card__sm__list__icon"><a class="preview__card__sm__list__icon__link mobile js-preview-phone" href=""
-                                  alt="Telephone" title="Teléfono"><i class="fas fa-mobile-alt"></i></a></li>
-                          <li class="preview__card__sm__list__icon"><a class="preview__card__sm__list__icon__link js-preview-mail" href=""
+                                  alt="Telephone" target="_blank" title="Teléfono"><i class="fas fa-mobile-alt"></i></a></li>
+                          <li class="preview__card__sm__list__icon"><a class="preview__card__sm__list__icon__link email js-preview-email" href=""
                                   alt="Email" target="_blank" title="Email"><i class="far fa-envelope"></i></a></li>
 
                           <li class="preview__card__sm__list__icon"><a class="js-preview-linkedin preview__card__sm__list__icon__link linkedin"
                                   href="" alt="Linkedin" title="Linkedin" target="_blank"><i class="fab fa-linkedin-in"></i></a></li>
 
-                          <li class="preview__card__sm__list__icon"><a class=" js-preview-github preview__card__sm__list__icon__link" href=""
+                          <li class="preview__card__sm__list__icon"><a class=" js-preview-github preview__card__sm__list__icon__link github" href=""
                                   alt="Github" title="Github" target="_blank"><i class="fab fa-github-alt"></i></a></li>
                       </ul>
                   </nav>
@@ -71,26 +69,27 @@
         role="form"
       >
         <fieldset class="form__design column">
-          <div class="form__box">
+          <div class="form__box js-form__box__button--design">
             <div class="form__box__item">
-              <i class="far fa-object-ungroup icon" aria-hidden="true"></i>
+              <i class="far fa-object-ungroup icon-menu" aria-hidden="true"></i>
               <h2 class="form__box__title txt-lg" aria-label="Diseña">Diseña</h2>
             </div>
-            <button class="form__box__button js-form__box__button--design">
-              <i class="fas fa-angle-down down"></i>
+            <button class="form__box__button">
+              <div class="form__box__button__left-bar"></div>
+              <div class="form__box__button__right-bar"></div>
             </button>
           </div>
           <div class="form__color--container">
             <div class="form__color m-top">
               <label for="color1" class="form__label">Colores</label>
-              <div class="form__color__box">
+              <div class="form__color__box js-col0">
                 <input
                   type="radio"
                   name="color"
                   id="color1"
-                  class="form__color__input js-color1"
+                  class="form__color__input js-color0"
                 />
-                <div class="form__color__option js-color1">
+                <div class="form__color__option js-color">
                   <div class="form__color__first color-box"></div>
                   <div class="form__color__second color-box"></div>
                   <div class="form__color__third color-box"></div>
@@ -99,12 +98,12 @@
             </div>
             <div class="form__color">
               <label for="color1" class="form__label"></label>
-              <div class="form__color__box">
+              <div class="form__color__box js-col1">
                 <input
                   type="radio"
                   name="color"
                   id="color1"
-                  class="form__color__input js-color2"
+                  class="form__color__input js-color1"
                 />
                 <div class="form__color__option">
                   <div class="form__color__fourth color-box"></div>
@@ -115,12 +114,12 @@
             </div>
             <div class="form__color">
               <label for="color1" class="form__label"></label>
-              <div class="form__color__box">
+              <div class="form__color__box js-col2">
                 <input
                   type="radio"
                   name="color"
                   id="color1"
-                  class="form__color__input js-color3"
+                  class="form__color__input js-color2"
                 />
                 <div class="form__color__option">
                   <div class="form__color__seventh color-box"></div>
@@ -129,19 +128,36 @@
                 </div>
               </div>
             </div>
+            <div class="form__color">
+              <label for="color1" class="form__label"></label>
+              <div class="form__color__box js-col3">
+                <input
+                  type="radio"
+                  name="color"
+                  id="color1"
+                  class="form__color__input js-color3"
+                />
+                <div class="form__color__option">
+                  <div class="form__color__tenth color-box"></div>
+                  <div class="form__color__eleventh color-box"></div>
+                  <div class="form__color__twelfth color-box"></div>
+                </div>
+              </div>
+            </div>
           </div>
         </fieldset>
 
         <fieldset class="form__fill column txt-dark bold">
-          <div class="form__box">
+          <div class="form__box js-form__box__button--fill">
             <div class="form__box__item">
-              <i class="far fa-keyboard icon" aria-hidden="true"></i>
+              <i class="far fa-keyboard icon-menu" aria-hidden="true"></i>
               <h2 class="form__box__title txt-lg txt-light" aria-label="Rellena">
                 Rellena
               </h2>
             </div>
-            <button class="form__box__button js-form__box__button--fill">
-              <i class="fas fa-angle-down down"></i>
+            <button class="form__box__button">
+              <div class="form__box__button__left-bar"></div>
+              <div class="form__box__button__right-bar"></div>
             </button>
           </div>
 
@@ -196,13 +212,13 @@
               </div>
             </div>
             <div class="form__data__name" aria-label="Contacto">
-              <label class="form__data__label" for="mail">Email</label>
+              <label class="form__data__label" for="email">Email</label>
               <input
                 required
-                class="form__data__input js-mail js-intro-mail"
+                class="form__data__input js-email js-intro-email"
                 type="email"
-                name="mail"
-                id="mail"
+                name="email"
+                id="email"
                 placeholder="Ej: sally.hill@gmail.com"
               />
 
@@ -235,13 +251,14 @@
         </fieldset>
 
         <fieldset class="form__share column">
-          <div class="form__box">
+          <div class="form__box js-form__box__button--share">
             <div class="form__box__item">
-              <i class="fas fa-share-alt icon" aria-hidden="true"></i>
+              <i class="fas fa-share-alt icon-menu" aria-hidden="true"></i>
               <h2 class="form__box__title txt-lg" aria-label="Comparte">Comparte</h2>
             </div>
-            <button class="form__box__button js-form__box__button--share">
-              <i class="fas fa-angle-down down"></i>
+            <button class="form__box__button">
+              <div class="form__box__button__left-bar"></div>
+              <div class="form__box__button__right-bar"></div>
             </button>
           </div>
           <div class="form__share--container">
@@ -255,17 +272,19 @@
             <div class="form__share--message js-form__share--message">
               <h3 class="form__box__title h3 txt-lg">La tarjeta ha sido creada:</h3>
               <a
-                class="card-link txt-bright txt-xs"
+                class="card-link js-card-link txt-bright txt-xs"
                 href="#"
                 title="Link a la nueva tarjeta"
                 >Link a la nueva tarjeta</a
               >
-              <button
-                class="share-twitter txt-wh txt-fsec txt-sm"
-                title="Compartir en twitter"
+
+              <a
+                class="twitter-share-button js-twitter share-twitter txt-wh txt-fsec txt-sm"
+                href="https://twitter.com/"
+                target="_blank"
               >
-                <i class="fab fa-twitter"></i>Compartir en twitter
-              </button>
+                <i class="fab fa-twitter"></i> Compartir en twitter</a
+              >
             </div>
           </div>
         </fieldset>
@@ -273,10 +292,13 @@
 
     </div>
     <footer class="footer" role="contentinfo">
-      <small class="copy txt-fsec txt-lighter txt-sm">
-        Catrina's awesome profile-cards @2020</small
-      >
-      <img class="logo" src="./assets/images/logo-adalab.png" title="Logotipo" />
+      <div class="footer__box">
+        <img class="footer__icon" src="./assets/images/catrina.png" alt="Catrinas logo" title="Logotipo Catrinas">
+        <small class="footer__copy txt-fsec txt-lighter txt-sm">Catrinas profile-cards @2020</small>
+      </div>
+      <a href="https://adalab.es/" target="_blank" class="footer__logo">
+        <img class="footer__logo__img" src="./assets/images/logo-adalab.png" title="Adalab" />
+      </a>
     </footer>
 
     <script src="./assets/js/main.js"></script>
