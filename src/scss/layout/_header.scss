@@ -6,12 +6,12 @@
   align-items: center;
   @media (min-width: 768px) {
     justify-content: left;
+    margin-left: 40px;
   }
   &__link {
     cursor: pointer;
     &__logo {
       width: 201px;
-      margin-left: 40px;
     }
   }
 }
