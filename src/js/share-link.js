@@ -37,7 +37,11 @@ function showURL(result) {
   } else if (result.error === undefined) {
     cardLink.innerHTML = `Creando tu link</br><i class="fas fa-spinner"></i>`;
     buttonTwitter.innerHTML = `<i class="fas fa-spinner"></i>`;
+    cardLink.removeAttribute("href");
+    buttonTwitter.removeAttribute("href");
   } else {
     cardLink.innerHTML = `ERROR: ${result.error}`;
+    cardLink.removeAttribute("href");
+    buttonTwitter.removeAttribute("href");
   }
 }
