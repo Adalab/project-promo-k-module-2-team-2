@@ -54,9 +54,12 @@ function fillCard() {
     const previewCardElementRemove = formData[inputId].remove;
 
     if (inputValue === "") {
-      previewCardElement[
-        previewCardElementProperty
-      ] = previewCardElementPlaceholder;
+      previewCardElement.removeAttribute("href");
+      if (previewCardElementPrefix === true) {
+        previewCardElement[
+          previewCardElementProperty
+        ] = previewCardElementPlaceholder;
+      }
     } else {
       if (previewCardElementRemove === true) {
         inputValue = inputValue.replace(previewCardElementPrefix, "");
