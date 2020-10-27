@@ -102,7 +102,6 @@ function updateCard() {
   fillImage();
   setDataInLocalStorage();
   setData();
-  showURL(true);
 }
 
 for (let formDataElement in formData) {

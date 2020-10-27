@@ -34,7 +34,6 @@ function paletteChange() {
         linkData.palette = colorPaletteItem + 1;
       }
     }
-    showURL(true);
   }
 
   // Event listener

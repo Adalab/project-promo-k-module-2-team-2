@@ -29,7 +29,7 @@ function showURL(result) {
       result.cardURL +
       "</a>";
   } else {
-    cardLink.innerHTML = "ERROR:" + result.error;
+    cardLink.innerHTML = "ERROR: " + result.error;
   }
 }
 
@@ -42,6 +42,5 @@ function createTwitterLink(result) {
   );
 
   const twitterURL = document.querySelector(".js-card-link2").href;
-  // const twitterURL = result.cardURL;
   buttonTwitter.href = `https://twitter.com/intent/tweet?text=${twitterText}&url=${twitterURL}`;
 }
