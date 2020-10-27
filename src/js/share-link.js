@@ -38,6 +38,6 @@ function showURL(result) {
     cardLink.innerHTML = `Creando tu link</br><i class="fas fa-spinner"></i>`;
     buttonTwitter.innerHTML = `<i class="fas fa-spinner"></i>`;
   } else {
-    cardLink.innerHTML = "ERROR: " + result.error;
+    cardLink.innerHTML = `ERROR: ${result.error}`;
   }
 }
