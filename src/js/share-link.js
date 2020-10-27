@@ -21,20 +21,21 @@ function sendRequest(json) {
 function showURL(result) {
   // Link
   const cardLink = document.querySelector(".js-card-link");
-
-  if (result.success === true) {
-    cardLink.innerHTML = result.cardURL;
-    cardLink.href = result.cardURL;
-  } else if (result.error === undefined) {
-    cardLink.innerHTML = "Creando tu link";
-  } else {
-    cardLink.innerHTML = "ERROR: " + result.error;
-  }
-
   // Twitter
   const buttonTwitter = document.querySelector(".js-twitter");
   const twitterText = encodeURIComponent(
     "¡He creado mi tarjeta con Catrina's profile cards!"
   );
-  buttonTwitter.href = `https://twitter.com/intent/tweet?text=${twitterText}&url=${result.cardURL}`;
+
+  if (result.success === true) {
+    cardLink.innerHTML = result.cardURL;
+    cardLink.href = result.cardURL;
+    buttonTwitter.href = `https://twitter.com/intent/tweet?text=${twitterText}&url=${result.cardURL}`;
+    buttonTwitter.innerHTML = `<i class="fab fa-twitter"></i> Compartir en twitter</a>`;
+  } else if (result.error === undefined) {
+    cardLink.innerHTML = `Creando tu link <i class="fas fa-spinner"></i>`;
+    buttonTwitter.innerHTML = `<i class="fas fa-spinner"></i>`;
+  } else {
+    cardLink.innerHTML = "ERROR: " + result.error;
+  }
 }
