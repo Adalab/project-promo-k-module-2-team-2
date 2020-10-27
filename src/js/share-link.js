@@ -30,10 +30,10 @@ function showURL(result) {
   if (result.success === true) {
     cardLink.innerHTML = result.cardURL;
     cardLink.href = result.cardURL;
-    buttonTwitter.href = `https://twitter.com/intent/tweet?text=${twitterText}&url=${result.cardURL}`;
+    buttonTwitter.href = `https://twitter.com/intent/tweet?text=${twitterText}&url=${result.cardURL}&hashtags=Catrinas,Team2&via=yanira_fr,@arantxa`;
     buttonTwitter.innerHTML = `<i class="fab fa-twitter"></i> Compartir en twitter</a>`;
   } else if (result.error === undefined) {
-    cardLink.innerHTML = `Creando tu link <i class="fas fa-spinner"></i>`;
+    cardLink.innerHTML = `Creando tu link</br><i class="fas fa-spinner"></i>`;
     buttonTwitter.innerHTML = `<i class="fas fa-spinner"></i>`;
   } else {
     cardLink.innerHTML = "ERROR: " + result.error;
