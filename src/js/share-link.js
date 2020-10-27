@@ -17,6 +17,7 @@ function sendRequest(json) {
 }
 
 function showURL(result) {
+  // Link
   const cardLink = document.querySelector(".js-card-link");
 
   if (result.success === true) {
@@ -31,16 +32,11 @@ function showURL(result) {
   } else {
     cardLink.innerHTML = "ERROR: " + result.error;
   }
-}
 
-// button twitter
-
-function createTwitterLink(result) {
+  // Twitter
   const buttonTwitter = document.querySelector(".js-twitter");
   const twitterText = encodeURIComponent(
     "¡He creado mi tarjeta con Catrina's profile cards!"
   );
-
-  const twitterURL = document.querySelector(".js-card-link2").href;
-  buttonTwitter.href = `https://twitter.com/intent/tweet?text=${twitterText}&url=${twitterURL}`;
+  buttonTwitter.href = `https://twitter.com/intent/tweet?text=${twitterText}&url=${result.cardURL}`;
 }

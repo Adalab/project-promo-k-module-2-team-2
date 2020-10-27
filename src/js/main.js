@@ -35,8 +35,6 @@ function handleButtonArrowClick(event) {
   if (buttonArrowShare.classList.contains("btn-rotate") === true) {
     formBoxShare.style.height = "110px";
     formBoxShare.style.opacity = "1";
-    sendRequest();
-    showURL(true);
   } else if (buttonArrowShare.classList.contains("btn-rotate") === false) {
     formBoxShare.style.height = "0";
     formBoxShare.style.opacity = "0";
@@ -63,7 +61,6 @@ function handleButtonSubmit(event) {
   }
   sendRequest();
   showURL(true);
-  createTwitterLink(true);
 
   event.preventDefault();
 }
