@@ -88,7 +88,14 @@ function getDataFromLocalStorage() {
   const savedColor = JSON.parse(localStorage.getItem("palette"));
   const palette = document.querySelector(".js-palette");
   palette.classList.add(`palette${savedColor}`);
-
+  console.log(savedColor);
+  for (const col in colorPalette) {
+    const colorCheck = document.querySelector(`.js-color${col}`);
+    console.log(colorCheck);
+    if (colorCheck.classList.contains(`js-color${savedColor}`)) {
+      colorCheck.checked = true;
+    }
+  }
   // Image
   const savedPhoto = localStorage.getItem("photo");
   const cardPhoto = document.querySelector(".js__profile-image");
