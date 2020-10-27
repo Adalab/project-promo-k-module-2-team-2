@@ -31,6 +31,8 @@ function showURL(result) {
       ">" +
       result.cardURL +
       "</a>";
+  } else if (result.error === undefined) {
+    cardLink.innerHTML = "Creating link";
   } else {
     cardLink.innerHTML = "ERROR: " + result.error;
   }
