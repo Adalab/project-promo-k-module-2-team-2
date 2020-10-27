@@ -1,17 +1,17 @@
-'use strict';
+"use strict";
 
 //Data array
 const linkData = {};
 
-function setData (){
-  let cardImage = document.querySelector('.js__profile-image').style.backgroundImage;
+function setData() {
+  let cardImage = document.querySelector(".js__profile-image").style
+    .backgroundImage;
   cardImage = cardImage.slice(5, cardImage.length, 1);
   linkData.photo = cardImage;
 }
 
-
 // Card class selector
-const palette = document.querySelector('.js-palette');
+const palette = document.querySelector(".js-palette");
 
 // Palette array
 const colorPalette = [0, 1, 2, 3];
@@ -19,7 +19,6 @@ const colorPalette = [0, 1, 2, 3];
 // Palette change function
 
 function paletteChange() {
-
   function colorChange(ev) {
     // Options
     for (let colorPaletteElement in colorPalette) {
@@ -31,12 +30,11 @@ function paletteChange() {
       if (ev.currentTarget.classList.contains(`js-col${colorPaletteItem}`)) {
         colorChoice.checked = true;
         palette.classList.add(`palette${colorPaletteItem}`);
-        localStorage.setItem('palette', JSON.stringify(colorPaletteElement));
+        localStorage.setItem("palette", JSON.stringify(colorPaletteElement));
         linkData.palette = colorPaletteItem + 1;
       }
     }
-  sendRequest();
-  showURL(true);
+    showURL(true);
   }
 
   // Event listener
@@ -45,25 +43,23 @@ function paletteChange() {
     const colorChoiceCheck = document.querySelector(
       `.js-col${colorPaletteElement}`
     );
-    // console.log(colorChoiceCheck);
-    colorChoiceCheck.addEventListener('click', colorChange);
+    colorChoiceCheck.addEventListener("click", colorChange);
   }
 }
 
 // Startup
 
-function startPalette (){
-
-  if (palette.classList.contains('palettenull')){
-    palette.classList.add('palette0');
-    palette.classList.remove('palettenull');
+function startPalette() {
+  if (palette.classList.contains("palettenull")) {
+    palette.classList.add("palette0");
+    palette.classList.remove("palettenull");
   }
 }
 
 function startPhoto() {
-  const previewPhoto = document.querySelector('.js__profile-image');
-  const storedPhoto = localStorage.getItem('palette');
-  if (storedPhoto === null){
-    previewPhoto.style.backgroundImage = 'none';
+  const previewPhoto = document.querySelector(".js__profile-image");
+  const storedPhoto = localStorage.getItem("palette");
+  if (storedPhoto === null) {
+    previewPhoto.style.backgroundImage = "none";
   }
 }
