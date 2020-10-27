@@ -52,6 +52,8 @@ function startPalette() {
   if (palette.classList.contains("palettenull")) {
     palette.classList.add("palette0");
     palette.classList.remove("palettenull");
+    const colorCheck = document.querySelector(".js-color0");
+    colorCheck.checked = true;
   }
 }
 
