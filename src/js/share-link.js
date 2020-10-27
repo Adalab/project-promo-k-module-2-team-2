@@ -1,5 +1,6 @@
 "use strict";
 
+// API request function
 function sendRequest(json) {
   fetch("https://us-central1-awesome-cards-cf6f0.cloudfunctions.net/card/", {
     method: "POST",
@@ -16,6 +17,7 @@ function sendRequest(json) {
     });
 }
 
+// Set URL function
 function showURL(result) {
   // Link
   const cardLink = document.querySelector(".js-card-link");

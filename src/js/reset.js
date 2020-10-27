@@ -1,12 +1,10 @@
-/* eslint-disable no-unused-vars */
 "use strict";
 
-//crear variables con los elementos del listener y los que queremos cambiar en la tarjeta
+// Query selectors
 const reset = document.querySelector(".js-reset");
-
-// //funcion a cada propiedad
 const paletteReset = document.querySelector(".js-palette");
 
+// Reset function
 function resetCard() {
   for (let formDataReset in formData) {
     const inputReset = document.querySelector(`.js-intro-${formDataReset}`);
@@ -24,5 +22,5 @@ function resetCard() {
   localStorage.clear();
 }
 
-//evento sobre el botón.
+// Button event
 reset.addEventListener("click", resetCard);

@@ -1,6 +1,6 @@
 "use strict";
 
-// Optimized version
+// Form array
 
 const formData = {
   name: {
@@ -41,6 +41,7 @@ const formData = {
   },
 };
 
+// Fill card function
 function fillCard() {
   for (let formDataElement in formData) {
     const input = document.querySelector(`.js-intro-${formDataElement}`);
@@ -67,6 +68,8 @@ function fillCard() {
     }
   }
 }
+
+// Form local storage
 function setDataInLocalStorage() {
   for (let formDataElement in formData) {
     const input = document.querySelector(`.js-intro-${formDataElement}`);
@@ -76,6 +79,7 @@ function setDataInLocalStorage() {
   }
 }
 
+// Get from local function
 function getDataFromLocalStorage() {
   // Form data
   for (let formDataElement in formData) {
@@ -102,6 +106,7 @@ function getDataFromLocalStorage() {
   cardPhoto.style.backgroundImage = savedPhoto;
 }
 
+// Update card function
 function updateCard() {
   startPalette();
   fillCard();
@@ -111,11 +116,11 @@ function updateCard() {
   setData();
 }
 
+// Input event listeners
 for (let formDataElement in formData) {
   const inputClass = document.querySelector(`.js-intro-${formDataElement}`);
   inputClass.addEventListener("keyup", updateCard);
 }
 
-// startPhoto();
 getDataFromLocalStorage();
 updateCard();

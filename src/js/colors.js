@@ -17,7 +17,6 @@ const palette = document.querySelector(".js-palette");
 const colorPalette = [0, 1, 2, 3];
 
 // Palette change function
-
 function paletteChange() {
   function colorChange(ev) {
     // Options
@@ -37,7 +36,6 @@ function paletteChange() {
   }
 
   // Event listener
-
   for (let colorPaletteElement of colorPalette) {
     const colorChoiceCheck = document.querySelector(
       `.js-col${colorPaletteElement}`
@@ -47,7 +45,6 @@ function paletteChange() {
 }
 
 // Startup
-
 function startPalette() {
   if (palette.classList.contains("palettenull")) {
     palette.classList.add("palette0");
