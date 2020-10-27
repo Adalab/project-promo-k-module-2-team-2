@@ -23,16 +23,10 @@ function showURL(result) {
   const cardLink = document.querySelector(".js-card-link");
 
   if (result.success === true) {
-    cardLink.innerHTML =
-      "<a href=" +
-      result.cardURL +
-      ' target="_blank"' +
-      ' class="card-link js-card-link2 txt-bright txt-xs"' +
-      ">" +
-      result.cardURL +
-      "</a>";
+    cardLink.innerHTML = result.cardURL;
+    cardLink.href = result.cardURL;
   } else if (result.error === undefined) {
-    cardLink.innerHTML = "Creating link";
+    cardLink.innerHTML = "Creando tu link";
   } else {
     cardLink.innerHTML = "ERROR: " + result.error;
   }
