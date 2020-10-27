@@ -38,6 +38,7 @@ function handleButtonArrowClick(event) {
   } else if (buttonArrowShare.classList.contains("btn-rotate") === false) {
     formBoxShare.style.height = "0";
     formBoxShare.style.opacity = "0";
+    buttonSubmit.classList.remove("change-color");
   }
 
   event.preventDefault();

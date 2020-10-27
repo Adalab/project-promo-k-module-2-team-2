@@ -19,6 +19,11 @@ function resetCard() {
   const colorChoice = document.querySelector(`.js-color0`);
   colorChoice.checked = true;
 
+  if (buttonSubmit.classList.contains("change-color")) {
+    formBoxShare.style.height = "110px";
+  }
+  buttonSubmit.classList.remove("change-color");
+
   updateCard();
   paletteChange();
   localStorage.clear();
