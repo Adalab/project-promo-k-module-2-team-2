@@ -16,6 +16,8 @@ function resetCard() {
     palette.classList.remove(`palette${colorPaletteElement}`);
   }
   palette.classList.add("palette0");
+  const colorChoice = document.querySelector(`.js-color0`);
+  colorChoice.checked = true;
 
   updateCard();
   paletteChange();
