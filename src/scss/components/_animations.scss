@@ -114,7 +114,7 @@
 
 // Loading
 .fa-spinner {
-  animation: rotate 1s infinite;
+  animation: rotate 1s infinite linear;
   @keyframes rotate {
     from {
       transform: rotate(0);
