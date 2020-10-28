@@ -29,19 +29,24 @@ function showURL(result) {
   const twitterHashtag = "Catrinas,Team2";
   const twitterVia = "&via=yanira_fr,@arantxa";
 
+  const created = document.querySelector(".js-created");
+
   if (result.success === true) {
     cardLink.innerHTML = result.cardURL;
     cardLink.href = result.cardURL;
+    buttonTwitter.style.display = "unset";
+    created.innerHTML = "Tu tarjeta ha sido creada";
     buttonTwitter.href = `https://twitter.com/intent/tweet?text=${twitterText}&url=${result.cardURL}&hashtags=${twitterHashtag}${twitterVia}`;
     buttonTwitter.innerHTML = `<i class="fab fa-twitter"></i> Compartir en twitter</a>`;
   } else if (result.error === undefined) {
     cardLink.innerHTML = `Creando tu link</br><i class="fas fa-spinner"></i>`;
-    buttonTwitter.innerHTML = `<i class="fas fa-spinner"></i>`;
+    buttonTwitter.style.display = "none";
+    created.innerHTML = " ";
     cardLink.removeAttribute("href");
-    buttonTwitter.removeAttribute("href");
   } else {
     cardLink.innerHTML = `ERROR: ${result.error}`;
     cardLink.removeAttribute("href");
-    buttonTwitter.removeAttribute("href");
+    buttonTwitter.style.display = "none";
+    created.innerHTML = " ";
   }
 }

@@ -52,7 +52,7 @@ function fillCard() {
     const previewCardElementPlaceholder = formData[inputId].placeholder;
     const previewCardElementPrefix = formData[inputId].prefix;
     const previewCardElementRemove = formData[inputId].remove;
-    debugger;
+
     if (inputValue === "") {
       previewCardElement[
         previewCardElementProperty
