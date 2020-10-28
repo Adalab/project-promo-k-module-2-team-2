@@ -14,8 +14,6 @@ function sendRequest(json) {
     })
     .then(function (result) {
       showURL(result);
-      console.log(result);
-      console.log(result.error);
     });
 }
 
@@ -28,25 +26,22 @@ function showURL(result) {
   const twitterText = encodeURIComponent(
     "¡He creado mi tarjeta con Catrina's profile cards!"
   );
-  const twitterHashtag = "Catrinas,Team2,Adalab,PromoKizzy";
-  const twitterVia = "&via=yanira_fr,@Chopper_hat,@teresaurio_,@Sus_G1";
+  const twitterHashtag = "Catrinas,Team2";
+  const twitterVia = "&via=yanira_fr,@arantxa";
 
   if (result.success === true) {
     cardLink.innerHTML = result.cardURL;
     cardLink.href = result.cardURL;
     buttonTwitter.href = `https://twitter.com/intent/tweet?text=${twitterText}&url=${result.cardURL}&hashtags=${twitterHashtag}${twitterVia}`;
-    buttonTwitter.style.display = "unset";
     buttonTwitter.innerHTML = `<i class="fab fa-twitter"></i> Compartir en twitter</a>`;
   } else if (result.error === undefined) {
     cardLink.innerHTML = `Creando tu link</br><i class="fas fa-spinner"></i>`;
     buttonTwitter.innerHTML = `<i class="fas fa-spinner"></i>`;
     cardLink.removeAttribute("href");
     buttonTwitter.removeAttribute("href");
-    buttonTwitter.style.display = "none";
   } else {
     cardLink.innerHTML = `ERROR: ${result.error}`;
     cardLink.removeAttribute("href");
     buttonTwitter.removeAttribute("href");
-    buttonTwitter.style.display = "none";
   }
 }

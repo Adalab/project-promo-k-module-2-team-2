@@ -56,7 +56,7 @@ function handleButtonSubmit(event) {
   buttonSubmit.classList.add("change-color");
 
   if (buttonSubmit.classList.contains("change-color")) {
-    formBoxShare.style.height = "260px";
+    formBoxShare.style.height = "250px";
     const shareMessageBox = document.querySelector(".form__share--message");
     shareMessageBox.classList.add("js-show-form__share--message");
   }

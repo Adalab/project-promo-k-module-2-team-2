@@ -16,25 +16,25 @@ const formData = {
     remove: false,
   },
   phone: {
-    placeholder: "1111111111",
+    placeholder: "",
     property: "href",
     prefix: "tel:",
     remove: false,
   },
   email: {
-    placeholder: "catrina.guadalupe@gmail.com",
+    placeholder: "",
     property: "href",
     prefix: "mailto:",
     remove: false,
   },
   linkedin: {
-    placeholder: "/catrina-de-guadalupe",
+    placeholder: "",
     property: "href",
     prefix: "https://linkedin.es/in/",
     remove: true,
   },
   github: {
-    placeholder: "@catrina-de-guadalupe",
+    placeholder: "",
     property: "href",
     prefix: "https://github.com/",
     remove: true,
@@ -52,14 +52,12 @@ function fillCard() {
     const previewCardElementPlaceholder = formData[inputId].placeholder;
     const previewCardElementPrefix = formData[inputId].prefix;
     const previewCardElementRemove = formData[inputId].remove;
-
+    debugger;
     if (inputValue === "") {
+      previewCardElement[
+        previewCardElementProperty
+      ] = previewCardElementPlaceholder;
       previewCardElement.removeAttribute("href");
-      if (previewCardElementPrefix === true) {
-        previewCardElement[
-          previewCardElementProperty
-        ] = previewCardElementPlaceholder;
-      }
     } else {
       if (previewCardElementRemove === true) {
         inputValue = inputValue.replace(previewCardElementPrefix, "");
