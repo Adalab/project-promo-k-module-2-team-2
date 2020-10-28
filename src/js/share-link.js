@@ -26,7 +26,7 @@ function showURL(result) {
   const twitterText = encodeURIComponent(
     "¡He creado mi tarjeta con Catrina's profile cards!"
   );
-  const twitterHashtag = "Catrinas,Team2,PromoKizzi,Adalab";
+  const twitterHashtag = "Catrinas,Team2,PromoKizzy,Adalab";
   const twitterVia = "&via=yanira_fr,@Chopper_hat,@teresaurio_,@Sus_G1";
 
   const created = document.querySelector(".js-created");
