@@ -16,8 +16,10 @@ function writeImage() {
   profileImage.style.backgroundImage = `url(${fr.result})`;
   fileField.removeAttribute("type", "file");
   fileField.setAttribute("type", "file");
+  linkData.photo = `url(${fr.result})`;
   localStorage.setItem("photo", `url(${fr.result})`);
   fillImage();
+  console.log(linkData);
 }
 
 function fillImage() {
